@@ -1,3 +1,4 @@
+import MeanuIcon from "./meanuicon.jsx";
 export default function Navbar() {
   const linkclass =
     "hover:text-[#0b1120]/60 text-sm sm:text-xs md:text-lg";
@@ -49,6 +50,9 @@ export default function Navbar() {
               </a>
             </li>
           </ul>
+        </div>
+        <div className="sm:hidden">
+			<MeanuIcon/>
         </div>
       </div>
     </nav>
