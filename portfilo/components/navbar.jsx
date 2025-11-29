@@ -51,7 +51,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <button className="sm:hidden border border-black rounded-md border-solid bg-black/10">
+        <button className="sm:hidden border border-black rounded-md border-solid bg-black/10 cursor-pointer">
 			<MeanuIcon/>
         </button>
       </div>
