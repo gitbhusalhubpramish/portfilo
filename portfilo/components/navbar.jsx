@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
   <>
   {showmenu &&(
-  <div className="fixed inset-0 bg-black/50 z-60" onClick={()=> setshowmenu(false)}></div>
+  <div className="fixed inset-0 bg-black/50 z-60 backdrop-blur-sm" onClick={()=> setshowmenu(false)}></div>
   )}
     <nav className={navcls}>
       <div className="flex items-center justify-between">
