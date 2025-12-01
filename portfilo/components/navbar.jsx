@@ -1,6 +1,7 @@
 "use client"
 import {useState} from "react";
 import MeanuIcon from "./meanuicon.jsx";
+import Menu from "./menu.jsx";
 export default function Navbar() {
   const linkclass =
     "hover:text-[#0b1120]/60 text-sm sm:text-xs md:text-lg";
@@ -12,7 +13,9 @@ export default function Navbar() {
   return (
   <>
   {showmenu &&(
-  <div className="fixed inset-0 bg-black/50 z-60 backdrop-blur-sm" onClick={()=> setshowmenu(false)}></div>
+  <div className="fixed inset-0 bg-black/50 z-60 backdrop-blur-sm" onClick={()=> setshowmenu(false)}>
+	<Menu/>
+  </div>
   )}
     <nav className={navcls}>
       <div className="flex items-center justify-between">
