@@ -7,7 +7,7 @@ export default function Menu(){
 				return(
 					<button
 						key={index}
-						className="px-6 py-3 text-lg rounded-lg hover:bg-white/20"
+						className="px-6 py-3 text-lg rounded-lg hover:bg-white/20 cursor-pointer"
 					>
 						<Link href={item.href} className="block w-full h-full">{item.name}</Link>
 					</button>

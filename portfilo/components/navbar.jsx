@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
   <>
   {showmenu &&(
-  <div className="fixed inset-0 bg-black/50 z-60 backdrop-blur-sm" onClick={()=> setshowmenu(false)}>
+  <div className="fixed inset-0 bg-black/50 z-60 backdrop-blur-sm justify-end flex" onClick={()=> setshowmenu(false)}>
 	<Menu/>
   </div>
   )}
