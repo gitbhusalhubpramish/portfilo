@@ -4,9 +4,10 @@ export default function Home() {
   return (
   <>
 	<div>
-    <Navbar/>
+		<Navbar/>
     </div>
-    <div className="">
+    
+    <div className="top-21 absolute"> hello
     </div>
     </>
   );
