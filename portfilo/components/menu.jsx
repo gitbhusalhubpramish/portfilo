@@ -1,8 +1,11 @@
 import navLinks from "../data/navlinks.json";
 import Link from 'next/link';
-export default function Menu(){
+export default function Menu({show}){
 	return(
-		<div className="h-full w-2/3 flex flex-col bg-[#1a1918]">
+		<div 
+			className={`h-full w-2/3 flex flex-col bg-[#1a1918] transition-transform duration-300 ease-out ${show ? "translate-x-0" : "translate-x-full"}`}
+			onClick = {(e)=> e.stopPropagation()}
+		>
 			{navLinks.map((item, index)=>{
 				return(
 					<button

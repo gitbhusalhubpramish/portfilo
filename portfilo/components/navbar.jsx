@@ -12,11 +12,15 @@ export default function Navbar() {
   const menuicnclk = ()=> setshowmenu(!showmenu);
   return (
   <>
-  {showmenu &&(
-  <div className="fixed inset-0 bg-black/50 z-60 backdrop-blur-sm justify-end flex" onClick={()=> setshowmenu(false)}>
-	<Menu/>
-  </div>
-  )}
+  <div
+  className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-60 flex justify-end
+    transition-opacity duration-500
+    ${showmenu ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
+  `}
+  onClick={() => setshowmenu(false)}
+>
+  <Menu show={showmenu} />
+</div>
     <nav className={navcls}>
       <div className="flex items-center justify-between">
         <h1 className="mr-5 text-lg sm:text-xl md:text-2xl font-semibold">
