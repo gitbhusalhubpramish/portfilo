@@ -7,8 +7,7 @@ export default function Home() {
 		<Navbar/>
     </div>
     
-    <div className="top-21 absolute"> hello
-    </div>
+    <div className="top-21 absolute"> hello</div>
     </>
   );
 }
