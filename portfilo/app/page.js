@@ -9,9 +9,10 @@ export default function Home() {
 		<Navbar/>
     </div>
     
-    <div className="flex flex-row h-screen"> 
-		<div className="w-full h-full relative">
-			<Image alt="cover" src={image} className="w-full h-full object-cover object-[50%_60%]"/>
+    <div className="flex flex-col h-screen"> 
+		<div className="w-full h-1/2 relative">
+			<Image alt="cover" src={image} className="w-full h-full object-cover"/>
+			<div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0b1120]" />
 		</div>
     </div>
     </>
