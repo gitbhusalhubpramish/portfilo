@@ -14,7 +14,7 @@ export default function Home() {
 			<Image alt="cover" src={image} className="w-full h-full object-cover"/>
 			<div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0b1120]" />
 		</div>
-		<h1 className="font-mono text-7xl text-[#008000] mx-10">prit.py</h1>
+		<h1 className="font-mono text-5xl sm:text-7xl text-[#008000] mx-10">prit.py</h1>
     </div>
     </>
   );
