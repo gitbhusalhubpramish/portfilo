@@ -18,7 +18,8 @@ export default function Home() {
 			<h1 className="font-mono text-5xl sm:text-7xl text-[#008000]">prit.py</h1>
 			<p className="m-1">Full-Stack Developer | Python Programmer</p>
 		</div>
-		<div className="mb-4 flex justify-end">
+		<div className="mb-4 flex justify-end flex-1 flex-col">
+			<div className="flex-1"/>
 			<div className="flex gap-4 mt-4 justify-end mr-4">
 				<a href="https://www.facebook.com/pramish.bhusal.393143/" className="w-12 h-12 flex items-center justify-center rounded-full bg-[#1c1f2b] hover:bg-[#0c0e13] transition-colors">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
