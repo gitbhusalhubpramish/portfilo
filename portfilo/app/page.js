@@ -20,7 +20,7 @@ export default function Home() {
 		</div>
 		<div className="mb-4 flex justify-end flex-1 flex-col">
 			<div className="flex-1"/>
-			<div className="flex gap-4 mt-4 justify-end mr-4">
+			<div className="flex gap-4 justify-end mr-4">
 				<a href="https://www.facebook.com/pramish.bhusal.393143/" className="w-12 h-12 flex items-center justify-center rounded-full bg-[#1c1f2b] hover:bg-[#0c0e13] transition-colors">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
 						<path d="M22.675 0h-21.35C.597 0 0 .592 0 1.326v21.348C0 23.408.597 24 1.325 24h11.495v-9.294H9.691V11.07h3.129V8.413c0-3.1 1.893-4.788 4.657-4.788 1.325 0 2.464.099 2.796.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.636h-3.12V24h6.116C23.403 24 24 23.408 24 22.674V1.326C24 .592 23.403 0 22.675 0z"/>
