@@ -46,7 +46,7 @@ export default function Home() {
 		<div className="sm:px-50 sm:py-30 h-full w-full py-8 px-12 flex flex-col">
 		<div>
 			<div>
-				<h3 className="sm:w-32 w-24 text-[#008000] text-5xl text-center m-5">2025</h3>
+				<h3 className="sm:w-32 w-24 text-[#008000] text-5xl text-center m-5 relative sm:right-40 right-15">{timeline.started}</h3>
 				<div className="rounded-full sm:size-32 size-24 bg-[#00bf00] m-5"></div>
 			</div>
 		</div>
