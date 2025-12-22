@@ -4,6 +4,28 @@ import Image from "next/image";
 import timeline from "../data/timeline.json";
 
 export default function Home() {
+	function Marker ({cls}){
+		return (
+			<div className={cls.par}>
+				<div className={cls.dot}/>
+				<div className="flex justify-center">
+				<div className={cls.linevr}/>
+				{cls.linehr ? <div className={cls.linehr}/> : ""}
+				</div>
+			</div>
+		)
+	}
+	const topdotcls = {
+		par:"flex flex-col m-4 mb-0 justify-center sm:w-32 w-24", 
+		dot:"rounded-full sm:size-32 size-24 bg-[#00bf00]", 
+		linevr:"h-30 w-2 bg-[#00bf00] relative bottom-px"
+		}
+	const dotcls = {
+		par:"flex flex-col sm:ml-8 ml-10 justify-center sm:w-12 w-24", 
+		dot:"rounded-full sm:size-24 size-12 bg-[#00bf00] relative bottom-1", 
+		linehr: "h-1 w-24 bg-[#00bf00] relative top-1/2 left-1/2", // horizontal
+		linevr: "h-[120px] w-1 bg-[#00bf00] relative left-1/2 bottom-2"
+		}
   return (
   <>
 	<div>
@@ -46,10 +68,19 @@ export default function Home() {
 		<div className="sm:px-50 sm:py-30 h-full w-full py-8 px-12 flex flex-col">
 		<div>
 			<div>
-				<h3 className="sm:w-32 w-24 text-[#008000] text-5xl text-center m-5 relative sm:right-40 right-15">{timeline.started}</h3>
-				<div className="rounded-full sm:size-32 size-24 bg-[#00bf00] m-5"></div>
+				<h3 className="sm:w-32 w-24 text-[#008000] text-5xl text-center m-5 relative sm:right-30 right-10">{timeline.started}</h3>
+				{/*<div className="rounded-full sm:size-32 size-24 bg-[#00bf00] m-5"></div>
+				<div className="h-30 w-4 bg-[#00bf00]"></div>*/}
+				<Marker cls={topdotcls}/>
 			</div>
 		</div>
+		{timeline.achievements.map((item,index)=>(
+			<div key={index} className="h-50">
+				<div>
+					<Marker cls={dotcls}/>
+				</div>
+			</div>
+		))}
 		</div>
     </div>
     </>
