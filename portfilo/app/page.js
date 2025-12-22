@@ -21,7 +21,7 @@ export default function Home() {
 		linevr:"h-30 w-2 bg-[#00bf00] relative bottom-px"
 		}
 	const dotcls = {
-		par:"flex flex-col sm:ml-8 ml-10 justify-center sm:w-12 w-24", 
+		par:"flex flex-col sm:ml-8 ml-10 justify-center sm:w-24 w-12", 
 		dot:"rounded-full sm:size-24 size-12 bg-[#00bf00] relative bottom-1", 
 		linehr: "h-1 w-24 bg-[#00bf00] relative top-1/2 left-1/2", // horizontal
 		linevr: "h-[120px] w-1 bg-[#00bf00] relative left-1/2 bottom-2"
