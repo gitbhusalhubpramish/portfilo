@@ -76,12 +76,15 @@ export default function Home() {
 			</div>
 		</div>
 		{timeline.achievements.map((item,index)=>(
-			<div key={index} className="h-50">
-				<div>
+			<div key={index} className="grid grid-cols-[40px_1fr] gap-6 p">
 					<Marker cls={index<timeline.achievements.length-1 ? dotcls : {dot:dotcls.dot,par:dotcls.par,linehr:dotcls.linehr}}/>
-				</div>
-				<div >
-					
+				<div className="bg-[#0c0e13] border border-[#1c1f2b] rounded-xl p-4">
+					<h4 className="text-lg font-semibold text-[#00bf00]">
+						{item.title}
+					</h4>
+					<p className="text-gray-400 mt-1">
+						{item.description}
+					</p>
 				</div>
 			</div>
 		))}
