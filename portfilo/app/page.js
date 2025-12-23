@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "../components/navbar";
 import image from "../public/homeimg.jpg";
 import Image from "next/image";
@@ -9,8 +10,8 @@ export default function Home() {
 			<div className={cls.par}>
 				<div className={cls.dot}/>
 				<div className="flex justify-center">
-				<div className={cls.linevr}/>
-				{cls.linehr ? <div className={cls.linehr}/> : ""}
+				{cls.linevr && <div className={cls.linevr} />}
+				{cls.linehr && <div className={cls.linehr} />}
 				</div>
 			</div>
 		)
@@ -23,7 +24,7 @@ export default function Home() {
 	const dotcls = {
 		par:"flex flex-col sm:ml-8 ml-10 justify-center sm:w-24 w-12", 
 		dot:"rounded-full sm:size-24 size-12 bg-[#00bf00] relative bottom-1", 
-		linehr: "h-1 w-24 bg-[#00bf00] relative top-1/2 left-1/2", // horizontal
+		linehr: "h-1 w-24 bg-[#00bf00] relative bottom-1/2 left-9/10", // horizontal
 		linevr: "sm:h-[120px] h-[130px] w-1 bg-[#00bf00] relative left-1/2 bottom-2"
 		}
   return (
@@ -78,6 +79,9 @@ export default function Home() {
 			<div key={index} className="h-50">
 				<div>
 					<Marker cls={index<timeline.achievements.length-1 ? dotcls : {dot:dotcls.dot,par:dotcls.par,linehr:dotcls.linehr}}/>
+				</div>
+				<div >
+					
 				</div>
 			</div>
 		))}
