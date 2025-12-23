@@ -24,7 +24,7 @@ export default function Home() {
 		par:"flex flex-col sm:ml-8 ml-10 justify-center sm:w-24 w-12", 
 		dot:"rounded-full sm:size-24 size-12 bg-[#00bf00] relative bottom-1", 
 		linehr: "h-1 w-24 bg-[#00bf00] relative top-1/2 left-1/2", // horizontal
-		linevr: "h-[120px] w-1 bg-[#00bf00] relative left-1/2 bottom-2"
+		linevr: "sm:h-[120px] h-[130px] w-1 bg-[#00bf00] relative left-1/2 bottom-2"
 		}
   return (
   <>
@@ -77,7 +77,7 @@ export default function Home() {
 		{timeline.achievements.map((item,index)=>(
 			<div key={index} className="h-50">
 				<div>
-					<Marker cls={dotcls}/>
+					<Marker cls={index<timeline.achievements.length-1 ? dotcls : {dot:dotcls.dot,par:dotcls.par,linehr:dotcls.linehr}}/>
 				</div>
 			</div>
 		))}
