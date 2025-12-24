@@ -23,9 +23,9 @@ export default function Home() {
 		}
 	const dotcls = {
 		par:"flex flex-col sm:ml-8 ml-10 justify-center sm:w-24 w-12", 
-		dot:"rounded-full sm:size-24 size-12 bg-[#00bf00] relative bottom-1", 
-		linehr: "h-1 w-24 bg-[#00bf00] relative bottom-1/2 left-9/10", // horizontal
-		linevr: "sm:h-[120px] h-[130px] w-1 bg-[#00bf00] relative left-1/2 bottom-2"
+		dot:"rounded-full sm:size-24 size-12 bg-[#00bf00] relative ", 
+		linehr: "h-1 w-30 bg-[#00bf00] relative bottom-1/2 left-9/10", // horizontal
+		linevr: "sm:h-[120px] h-[130px] w-1 bg-[#00bf00] relative left-1/2"
 		}
   return (
   <>
@@ -65,7 +65,7 @@ export default function Home() {
 			</div>
 		</div>
     </div>
-    <div className="min-w-screen min-h-screen w-screen h-screen">
+    <div className="min-h-screen w-full h-full">
 		<div className="sm:px-50 sm:py-30 h-full w-full py-8 px-12 flex flex-col">
 		<div>
 			<div>
@@ -76,7 +76,7 @@ export default function Home() {
 			</div>
 		</div>
 		{timeline.achievements.map((item,index)=>(
-			<div key={index} className="grid grid-cols-[40px_1fr] gap-6 p">
+			<div key={index} className="grid grid-cols-[200px_1fr] gap-6 p">
 					<Marker cls={index<timeline.achievements.length-1 ? dotcls : {dot:dotcls.dot,par:dotcls.par,linehr:dotcls.linehr}}/>
 				<div className="bg-[#0c0e13] border border-[#1c1f2b] rounded-xl p-4">
 					<h4 className="text-lg font-semibold text-[#00bf00]">
