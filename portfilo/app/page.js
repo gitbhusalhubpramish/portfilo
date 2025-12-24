@@ -19,13 +19,19 @@ export default function Home() {
 	const topdotcls = {
 		par:"flex flex-col m-4 mb-0 justify-center sm:w-32 w-24", 
 		dot:"rounded-full sm:size-32 size-24 bg-[#00bf00]", 
-		linevr:"h-30 w-2 bg-[#00bf00] relative bottom-px"
+		linevr:"h-30 w-2 bg-[#00bf00] relative"
 		}
 	const dotcls = {
 		par:"flex flex-col sm:ml-8 ml-10 justify-center sm:w-24 w-12", 
 		dot:"rounded-full sm:size-24 size-12 bg-[#00bf00] relative ", 
-		linehr: "h-1 w-30 bg-[#00bf00] relative bottom-1/2 left-9/10", // horizontal
-		linevr: "sm:h-[120px] h-[130px] w-1 bg-[#00bf00] relative left-1/2"
+		linehr: "h-1 w-30 bg-[#00bf00] relative sm:bottom-12 bottom-6 left-9/10", // horizontal
+		linevr: "sm:h-[120px] grow w-1 bg-[#00bf00] relative left-1/2",
+		
+		last:{
+			par:"flex flex-col sm:ml-8 ml-10 sm:w-24 w-12", 
+			dot:"rounded-full sm:size-24 size-12 bg-[#00bf00] relative ",
+		linehr: "h-1 w-30 bg-[#00bf00] relative sm:bottom-12 bottom-6 left-9/10"
+		}
 		}
   return (
   <>
@@ -76,9 +82,9 @@ export default function Home() {
 			</div>
 		</div>
 		{timeline.achievements.map((item,index)=>(
-			<div key={index} className="grid grid-cols-[200px_1fr] gap-6 p">
-					<Marker cls={index<timeline.achievements.length-1 ? dotcls : {dot:dotcls.dot,par:dotcls.par,linehr:dotcls.linehr}}/>
-				<div className="bg-[#0c0e13] border border-[#1c1f2b] rounded-xl p-4">
+			<div key={index} className="grid grid-cols-[190px_1fr] gap-6 p">
+					<Marker cls={index<timeline.achievements.length-1 ? dotcls : dotcls.last}/>
+				<div className="mb-10 bg-[#0c0e13] border border-[#1c1f2b] rounded-xl p-4">
 					<h4 className="text-lg font-semibold text-[#00bf00]">
 						{item.title}
 					</h4>
