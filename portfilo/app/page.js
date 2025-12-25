@@ -72,30 +72,28 @@ export default function Home() {
 		</div>
     </div>
     <div className="min-h-screen w-full h-full">
-		<div className="sm:px-50 sm:py-30 h-full w-full py-8 px-3/20 flex flex-col">
-		<div>
+		<div className=" sm:py-30 h-full w-full py-8 sm:px-[15%] px-[7%] flex flex-col">
 			<div>
-				<h3 className="sm:w-32 w-24 text-[#008000] text-5xl text-center m-5 relative sm:right-30 right-10">{timeline.started}</h3>
-				{/*<div className="rounded-full sm:size-32 size-24 bg-[#00bf00] m-5"></div>
-				<div className="h-30 w-4 bg-[#00bf00]"></div>*/}
-				<Marker cls={topdotcls}/>
-			</div>
-		</div>
-		{timeline.achievements.map((item,index)=>(
-			<div key={index} className="grid sm:grid-cols-[190px_1fr] grid-cols-[107px_1fr] gap-6 p">
-					<Marker cls={index<timeline.achievements.length-1 ? dotcls : dotcls.last}/>
-				<div className="mb-10 bg-[#0c0e13] border border-[#1c1f2b] rounded-xl p-4">
-					<h4 className="text-lg font-semibold text-[#00bf00]">
-						{item.title}
-					</h4>
-					<p className="text-gray-400 mt-1">
-						{item.description}
-					</p>
+				<div>
+					<h3 className="sm:w-32 w-24 text-[#008000] text-5xl text-center my-20 relative ">{timeline.started}</h3>
+					<Marker cls={topdotcls}/>
 				</div>
 			</div>
-		))}
+			{timeline.achievements.map((item,index)=>(
+				<div key={index} className="grid sm:grid-cols-[190px_1fr] grid-cols-[107px_1fr] gap-6 p">
+						<Marker cls={index<timeline.achievements.length-1 ? dotcls : dotcls.last}/>
+					<div className="mb-10 bg-[#0c0e13] border border-[#1c1f2b] rounded-xl p-4">
+						<h4 className="text-lg font-semibold text-[#00bf00]">
+							{item.title}
+						</h4>
+						<p className="text-gray-400 mt-1">
+							{item.description}
+						</p>
+					</div>
+				</div>
+			))}
+			</div>
 		</div>
-    </div>
-    </>
+	</>
   );
 }
