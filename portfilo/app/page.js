@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import image from "../public/homeimg.jpg";
 import Image from "next/image";
 import timeline from "../data/timeline.json";
+import Footer from "../components/footer.js"
 
 export default function Home() {
 	function Marker ({cls}){
@@ -33,6 +34,7 @@ export default function Home() {
 			linehr: "h-1 w-30 bg-[#00bf00] relative sm:bottom-12 bottom-6 left-9/10"
 		}
 		}
+	const currentyear = new Date().getFullYear()
   return (
   <>
 	<div>
@@ -82,7 +84,7 @@ export default function Home() {
 			{timeline.achievements.map((item,index)=>(
 				<div key={index} className="grid sm:grid-cols-[190px_1fr] grid-cols-[107px_1fr] gap-6 p">
 						<Marker cls={index<timeline.achievements.length-1 ? dotcls : dotcls.last}/>
-					<div className="mb-10 bg-[#0c0e13] border border-[#1c1f2b] rounded-xl p-4">
+					<div className="mb-10 sm:mb-20 bg-[#0c0e13] border border-[#1c1f2b] rounded-xl p-4">
 						<h4 className="text-lg font-semibold text-[#00bf00]">
 							{item.title}
 						</h4>
@@ -92,8 +94,10 @@ export default function Home() {
 					</div>
 				</div>
 			))}
+			<h3 className="sm:w-32 w-24 text-[#008000] text-5xl text-center  relative ">{currentyear}</h3>
 			</div>
 		</div>
+		<Footer/>
 	</>
   );
 }
