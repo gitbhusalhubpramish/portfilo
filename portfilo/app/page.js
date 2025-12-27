@@ -1,9 +1,7 @@
 "use client";
-import Navbar from "../components/navbar";
 import image from "../public/homeimg.jpg";
 import Image from "next/image";
 import timeline from "../data/timeline.json";
-import Footer from "../components/footer.js"
 
 export default function Home() {
 	function Marker ({cls}){
@@ -37,9 +35,7 @@ export default function Home() {
 	const currentyear = new Date().getFullYear()
   return (
   <>
-	<div>
-		<Navbar/>
-    </div>
+	
     
     <div className="flex flex-col h-screen text-base"> 
 		<div className="w-full h-2/3 relative">
@@ -97,7 +93,6 @@ export default function Home() {
 			<h3 className="sm:w-32 w-24 text-[#008000] text-5xl text-center  relative ">{currentyear}</h3>
 			</div>
 		</div>
-		<Footer/>
 	</>
   );
 }
