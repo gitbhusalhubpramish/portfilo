@@ -1,33 +1,32 @@
 {
-	"data":[
-		{
-			"Heading":"Introduction about me", 
-			"des": [
-				{
-					"cls": "m-3 mx-5",
-					"tag":"p",
-					"elm":"I am a yough programming prodigidy rised with self-education. I have grinded so many feild in a very small age. i started coding and programming when i was 11 years old."
-				}
-			]
-		},
-		{
-			"Heading": "Skills",
-			"des": [
-				{
-					"tag": "ul",
-					"cls": "m-2 mx-5",
-					"elm": [
-						{ "tag": "li", "elm": "Next.js" },
-						{ "tag": "li", "elm": "Python" },
-						{ "tag": "li", "elm": "DSA" },
-						{ "tag": "li", "elm": "pygame" },
-						{ "tag": "li", "elm": "CyberSecurity" },
-						{ "tag": "li", "elm": "Machine Learning & AI" },
-						{ "tag": "li", "elm": "Linux" }
-					]				
-				}				
-			]
-		}
-
-	]
+  "data": [
+    {
+      "Heading": "About Me",
+      "des": [
+        {
+          "cls": "m-3 mx-5",
+          "tag": "p",
+          "elm": "I am a self-taught programmer with a strong interest in building real projects and understanding fundamentals deeply. I started coding at the age of 11 and have since explored multiple areas of computer science through hands-on learning, problem solving, and consistent practice."
+        }
+      ]
+    },
+    {
+      "Heading": "Skills",
+      "des": [
+        {
+          "tag": "ul",
+          "cls": "m-2 mx-5",
+          "elm": [
+            { "tag": "li", "elm": "Next.js & Modern Web Development" },
+            { "tag": "li", "elm": "Python Programming" },
+            { "tag": "li", "elm": "Data Structures & Algorithms" },
+            { "tag": "li", "elm": "Pygame & Game Logic" },
+            { "tag": "li", "elm": "Cybersecurity Fundamentals" },
+            { "tag": "li", "elm": "Machine Learning & AI (Basics)" },
+            { "tag": "li", "elm": "Linux & System Usage" }
+          ]
+        }
+      ]
+    }
+  ]
 }
