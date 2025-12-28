@@ -22,8 +22,8 @@ export default function About() {
   return (
     <div className="m-45">
       {data.data.map((item, index) => (
-        <div key={index} className="m-2">
-          <h1 className="text-xl">{item.Heading}</h1>
+        <div key={index} className="m-2 ">
+          <h1 className="text-3xl">{item.Heading}</h1>
           {item.des.map((itm, idx) =>
             renderElem(itm)
           )}

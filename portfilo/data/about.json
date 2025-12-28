@@ -4,7 +4,7 @@
 			"Heading":"Introduction about me", 
 			"des": [
 				{
-					"cls": "m-3",
+					"cls": "m-3 mx-5",
 					"tag":"p",
 					"elm":"I am a yough programming prodigidy rised with self-education. I have grinded so many feild in a very small age. i started coding and programming when i was 11 years old."
 				}
@@ -15,7 +15,7 @@
 			"des": [
 				{
 					"tag": "ul",
-					"cls": "m-2",
+					"cls": "m-2 mx-5",
 					"elm": [
 						{ "tag": "li", "elm": "Next.js" },
 						{ "tag": "li", "elm": "Python" },
