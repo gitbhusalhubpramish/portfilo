@@ -2,16 +2,30 @@ import data from "@/data/about.json"
 import React from "react";
 
 export default function About() {
-	/*const elm = (dta)=>(
-		{}
-	)*/
+	const renderElem = (node, key) => {
+    // base case: text node
+    if (typeof node.elm === "string") {
+      return React.createElement(node.tag, { key }, node.elm);
+    }
+
+    // recursive case: array of children
+    if (Array.isArray(node.elm)) {
+      return React.createElement(
+        node.tag,
+        { key },
+        node.elm.map((child, idx) => renderElem(child, idx))
+      );
+    }
+
+    return null;
+  };
   return (
     <div className="m-45">
       {data.data.map((item, index) => (
         <div key={index} className="m-2">
           <h1 className="text-xl">{item.Heading}</h1>
           {item.des.map((itm, idx) =>
-            React.createElement(itm.tag, { key: idx }, itm.elm)
+            renderElem(itm)
           )}
         </div>
       ))}
