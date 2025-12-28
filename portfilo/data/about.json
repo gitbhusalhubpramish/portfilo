@@ -1,23 +1,33 @@
 {
 	"data":[
-		{"Heading":"Introduction about me", "des":[{"tag":"p","elm":"I am a yough programming prodigidy rised with self-education. I have grinded so many feild in a very small age. i started coding and programming when i was 11 years old."}]},
 		{
-  "Heading": "skills",
-  "des": [
-    {
-      "tag": "ul",
-      "elm": [
-        { "tag": "li", "elm": "Next.js" },
-        { "tag": "li", "elm": "Python" },
-        { "tag": "li", "elm": "DSA" },
-        { "tag": "li", "elm": "pygame" },
-        { "tag": "li", "elm": "CyberSecurity" },
-        { "tag": "li", "elm": "Machine Learning & AI" },
-        { "tag": "li", "elm": "Linux" }
-      ]
-    }
-  ]
-}
+			"Heading":"Introduction about me", 
+			"des": [
+				{
+					"cls": "m-3",
+					"tag":"p",
+					"elm":"I am a yough programming prodigidy rised with self-education. I have grinded so many feild in a very small age. i started coding and programming when i was 11 years old."
+				}
+			]
+		},
+		{
+			"Heading": "Skills",
+			"des": [
+				{
+					"tag": "ul",
+					"cls": "m-2",
+					"elm": [
+						{ "tag": "li", "elm": "Next.js" },
+						{ "tag": "li", "elm": "Python" },
+						{ "tag": "li", "elm": "DSA" },
+						{ "tag": "li", "elm": "pygame" },
+						{ "tag": "li", "elm": "CyberSecurity" },
+						{ "tag": "li", "elm": "Machine Learning & AI" },
+						{ "tag": "li", "elm": "Linux" }
+					]				
+				}				
+			]
+		}
 
 	]
 }
