@@ -4,9 +4,13 @@
       "Heading": "About Me",
       "des": [
         {
-          "cls": "m-3 mx-5",
-          "tag": "p",
-          "elm": "I am a self-taught programmer with a strong interest in building real projects and understanding fundamentals deeply. I started coding at the age of 11 and have since explored multiple areas of computer science through hands-on learning, problem solving, and consistent practice."
+          "cls": "flex m-3 mx-8",
+          "tag": "div",
+          "elm": [
+			{"tag":"div","cls":" w-2 mr-4 bg-gray-600", "elm":""},
+			{"tag":"p", "elm":"I am a self-taught programmer with a strong interest in building real projects and understanding fundamentals deeply. I started coding at the age of 11 and have since explored multiple areas of computer science through hands-on learning, problem solving, and consistent practice."}
+          
+          ]
         }
       ]
     },
@@ -15,7 +19,7 @@
       "des": [
         {
           "tag": "ul",
-          "cls": "m-2 mx-5",
+          "cls": "m-2 mx-8",
           "elm": [
             { "tag": "li", "elm": "Next.js & Modern Web Development" },
             { "tag": "li", "elm": "Python Programming" },
