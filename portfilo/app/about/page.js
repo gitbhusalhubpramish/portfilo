@@ -22,7 +22,7 @@ export default function About() {
       return React.createElement(node.tag, { key: keyPrefix, className:node.cls, src:node.src?node.src:null, alt:node.alt?node.alt:null}, node.elm);
     }
     if (node.tag === "img") {
-    return <img className={node.cls} src={node.src} alt={node.alt}/>;
+    return <img className={node.cls} src={node.src} alt={node.alt} key={keyPrefix}/>;
   }
 
     // recursive case: array of children
