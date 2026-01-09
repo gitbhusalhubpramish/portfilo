@@ -15,79 +15,227 @@
       ]
     },
     {
-      "Heading": "Skills",
-      "des": [
+      
+  "Heading": "Skills",
+  "des": [
+    {
+      "tag": "div",
+      "cls": "flex overflow-x-auto gap-5 sm:gap-10 p-7",
+      "elm": [
         {
-			"tag": "div",
-			"cls": "flex overflow-x-auto gap-5 sm:gap-10 p-7",
-			"elm": [
-				{ 
-					"tag": "div", 
-					"cls": "sm:w-3/7 flex-wrap w-2/3 gap-1 flex justify-center flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
-					"elm": [
-						
-						
-						{
-							"tag":"h1",
-							"cls":"w-[45%] text-xl font-bold ",
-							"elm":"Next.js & Modern Web Development"
-						},
-						{
-							"tag": "div",
-							"cls":" w-1/2 flex justify-center",
-							"elm":[
-								{
-									"tag":"img",
-									"alt":"Next",
-									"src":"/next.svg"
-								}
-							]
-						},
-						{
-							"tag":"h1",
-							"cls":"m-1 flex",
-							"elm":[
-								{"tag":"div","cls":" w-2 mr-4 bg-gray-600", "elm":""},
-								{"tag":"p", "elm":"I am good at Next.js and Modern developent, this website was build by me using next.js"}
-          
+          "tag": "div",
+          "cls": "sm:w-3/7 flex-wrap w-2/3 gap-1 flex justify-center flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl",
+          "elm": [
+            {
+              "tag": "h1",
+              "cls": "w-[45%] text-xl font-bold",
+              "elm": "Next.js & Modern Web Development"
+            },
+            {
+              "tag": "div",
+              "cls": "w-1/2 flex justify-center",
+              "elm": [
+                {
+                  "tag": "img",
+                  "alt": "Next",
+                  "src": "/next.svg"
+                }
+              ]
+            },
+            {
+              "tag": "h1",
+              "cls": "m-1 flex",
+              "elm": [
+                {"tag": "div", "cls": "w-2 mr-4 bg-gray-600", "elm": ""},
+                {"tag": "p", "elm": "I am good at Next.js and Modern development, this website was built by me using Next.js"}
+              ]
+            }
           ]
-						}
-					] 
-				},
-				{ 
-					"tag": "div", 
-					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
-					"elm": "Python Programming" 
-				},
-				{ 
-					"tag": "div", 
-					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
-					"elm": "Data Structures & Algorithms" 
-				},
-				{ 
-					"tag": "div", 
-					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
-					"elm": "Pygame & Game Logic" 
-				},
-				{ 
-					"tag": "div", 
-					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
-					"elm": "Cybersecurity Fundamentals" 
-				},
-				{ 
-					"tag": "div", 
-					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
-					"elm": "Machine Learning & AI (Basics)" 
-				},
-				{ 
-					"tag": "div", 
-					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
-					"elm": "Linux & System Usage" 
-				}
-			]
-		}
-
+        },
+        {
+          "tag": "div",
+          "cls": "sm:w-3/7 flex-wrap w-2/3 gap-1 flex justify-center flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl",
+          "elm": [
+            {
+              "tag": "h1",
+              "cls": "w-[45%] text-xl font-bold",
+              "elm": "Python Programming"
+            },
+            {
+              "tag": "div",
+              "cls": "w-1/2 flex justify-center",
+              "elm": [
+                {
+                  "tag": "img",
+                  "alt": "Python",
+                  "src": "/python.svg"
+                }
+              ]
+            },
+            {
+              "tag": "h1",
+              "cls": "m-1 flex",
+              "elm": [
+                {"tag": "div", "cls": "w-2 mr-4 bg-gray-600", "elm": ""},
+                {"tag": "p", "elm": "I have strong Python skills and can handle data structures, algorithms, and scripting tasks effectively."}
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "cls": "sm:w-3/7 flex-wrap w-2/3 gap-1 flex justify-center flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl",
+          "elm": [
+            {
+              "tag": "h1",
+              "cls": "w-[45%] text-xl font-bold",
+              "elm": "Data Structures & Algorithms"
+            },
+            {
+              "tag": "div",
+              "cls": "w-1/2 flex justify-center",
+              "elm": [
+                {
+                  "tag": "img",
+                  "alt": "DSA",
+                  "src": "/dsa.svg"
+                }
+              ]
+            },
+            {
+              "tag": "h1",
+              "cls": "m-1 flex",
+              "elm": [
+                {"tag": "div", "cls": "w-2 mr-4 bg-gray-600", "elm": ""},
+                {"tag": "p", "elm": "I have experience implementing algorithms and data structures with efficient logic and clean code."}
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "cls": "sm:w-3/7 flex-wrap w-2/3 gap-1 flex justify-center flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl",
+          "elm": [
+            {
+              "tag": "h1",
+              "cls": "w-[45%] text-xl font-bold",
+              "elm": "Pygame & Game Logic"
+            },
+            {
+              "tag": "div",
+              "cls": "w-1/2 flex justify-center",
+              "elm": [
+                {
+                  "tag": "img",
+                  "alt": "Pygame",
+                  "src": "/pygame.svg"
+                }
+              ]
+            },
+            {
+              "tag": "h1",
+              "cls": "m-1 flex",
+              "elm": [
+                {"tag": "div", "cls": "w-2 mr-4 bg-gray-600", "elm": ""},
+                {"tag": "p", "elm": "I create games using Pygame with fully functional game logic, animations, and interactive elements."}
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "cls": "sm:w-3/7 flex-wrap w-2/3 gap-1 flex justify-center flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl",
+          "elm": [
+            {
+              "tag": "h1",
+              "cls": "w-[45%] text-xl font-bold",
+              "elm": "Cybersecurity Fundamentals"
+            },
+            {
+              "tag": "div",
+              "cls": "w-1/2 flex justify-center",
+              "elm": [
+                {
+                  "tag": "img",
+                  "alt": "Cybersecurity",
+                  "src": "/cybersecurity.svg"
+                }
+              ]
+            },
+            {
+              "tag": "h1",
+              "cls": "m-1 flex",
+              "elm": [
+                {"tag": "div", "cls": "w-2 mr-4 bg-gray-600", "elm": ""},
+                {"tag": "p", "elm": "I understand core cybersecurity concepts including network security, ethical hacking, and system protection."}
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "cls": "sm:w-3/7 flex-wrap w-2/3 gap-1 flex justify-center flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl",
+          "elm": [
+            {
+              "tag": "h1",
+              "cls": "w-[45%] text-xl font-bold",
+              "elm": "Machine Learning & AI (Basics)"
+            },
+            {
+              "tag": "div",
+              "cls": "w-1/2 flex justify-center",
+              "elm": [
+                {
+                  "tag": "img",
+                  "alt": "ML",
+                  "src": "/ml.svg"
+                }
+              ]
+            },
+            {
+              "tag": "h1",
+              "cls": "m-1 flex",
+              "elm": [
+                {"tag": "div", "cls": "w-2 mr-4 bg-gray-600", "elm": ""},
+                {"tag": "p", "elm": "I have basic knowledge of machine learning and AI concepts, and can implement simple models and experiments."}
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "cls": "sm:w-3/7 flex-wrap w-2/3 gap-1 flex justify-center flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl",
+          "elm": [
+            {
+              "tag": "h1",
+              "cls": "w-[45%] text-xl font-bold",
+              "elm": "Linux & System Usage"
+            },
+            {
+              "tag": "div",
+              "cls": "w-1/2 flex justify-center",
+              "elm": [
+                {
+                  "tag": "img",
+                  "alt": "Linux",
+                  "src": "/linux.svg"
+                }
+              ]
+            },
+            {
+              "tag": "h1",
+              "cls": "m-1 flex",
+              "elm": [
+                {"tag": "div", "cls": "w-2 mr-4 bg-gray-600", "elm": ""},
+                {"tag": "p", "elm": "I am comfortable using Linux systems, command-line tools, and basic system administration tasks."}
+              ]
+            }
+          ]
+        }
       ]
+    }
+  ]
+
     }
   ]
 }
