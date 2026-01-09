@@ -23,11 +23,18 @@
 			"elm": [
 				{ 
 					"tag": "div", 
-					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
+					"cls": "sm:w-3/7 w-2/3 flex justify-center flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
 					"elm": [
+						
+						
+						{
+							"tag":"h1",
+							"cls":"w-1/2 text-xl font-bold ",
+							"elm":"Next.js & Modern Web Development"
+						},
 						{
 							"tag": "div",
-							"cls":"",
+							"cls":"m-3 w-1/2 flex justify-center",
 							"elm":[
 								{
 									"tag":"img",
@@ -35,12 +42,6 @@
 									"src":"/next.svg"
 								}
 							]
-						},
-						
-						{
-							"tag":"h1",
-							"cls":"",
-							"elm":"Next.js & Modern Web Development"
 						}
 					] 
 				},
