@@ -21,13 +21,59 @@
 			"tag": "div",
 			"cls": "flex overflow-x-auto gap-5 sm:gap-10 p-7",
 			"elm": [
-				{ "tag": "div", "cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", "elm": "Next.js & Modern Web Development" },
-				{ "tag": "div", "cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", "elm": "Python Programming" },
-				{ "tag": "div", "cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", "elm": "Data Structures & Algorithms" },
-				{ "tag": "div", "cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", "elm": "Pygame & Game Logic" },
-				{ "tag": "div", "cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", "elm": "Cybersecurity Fundamentals" },
-				{ "tag": "div", "cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", "elm": "Machine Learning & AI (Basics)" },
-				{ "tag": "div", "cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", "elm": "Linux & System Usage" }
+				{ 
+					"tag": "div", 
+					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
+					"elm": [
+						{
+							"tag": "div",
+							"cls":"",
+							"elm":[
+								{
+									"tag":"img",
+									"alt":"Next",
+									"src":"/next.svg"
+								}
+							]
+						},
+						
+						{
+							"tag":"h1",
+							"cls":"",
+							"elm":"Next.js & Modern Web Development"
+						}
+					] 
+				},
+				{ 
+					"tag": "div", 
+					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
+					"elm": "Python Programming" 
+				},
+				{ 
+					"tag": "div", 
+					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
+					"elm": "Data Structures & Algorithms" 
+				},
+				{ 
+					"tag": "div", 
+					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
+					"elm": "Pygame & Game Logic" 
+				},
+				{ 
+					"tag": "div", 
+					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
+					"elm": "Cybersecurity Fundamentals" 
+				},
+				{ 
+					"tag": "div", 
+					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
+					"elm": "Machine Learning & AI (Basics)" 
+				},
+				{ 
+					"tag": "div", 
+					"cls": "sm:w-3/7 w-2/3 flex-shrink-0 sm:p-7 p-5 border-2 rounded-3xl", 
+					"elm": "Linux & System Usage" 
+				}
 			]
 		}
 

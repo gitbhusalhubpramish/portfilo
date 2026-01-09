@@ -21,6 +21,9 @@ export default function About() {
     if (typeof node.elm === "string") {
       return React.createElement(node.tag, { key: keyPrefix, className:node.cls, src:node.src?node.src:null, alt:node.alt?node.alt:null}, node.elm);
     }
+    if (node.tag === "img") {
+    return <img className={node.cls} src={node.src} alt={node.alt}/>;
+  }
 
     // recursive case: array of children
     if (Array.isArray(node.elm)) {
