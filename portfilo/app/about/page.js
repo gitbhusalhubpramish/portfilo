@@ -34,7 +34,7 @@ export default function About() {
     return null;
   };
   return (
-    <div className="sm:m-50 mx-0 m-30">
+    <div className="sm:m-[15%] mx-0 m-30">
       {data.data.map((item, index) => (
         <div key={index} className="m-10 text-gray-300">
           <h1 className="text-5xl font-bold text-[#33a400]">{item.Heading}</h1>
