@@ -1,0 +1,24 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill:#0f172a }
+      .node { fill:#38bdf8 }
+      .line { stroke:#38bdf8; stroke-width:3 }
+      .text { fill:#e5e7eb; font-size:20px; font-family:monospace; font-weight:700 }
+    </style>
+  </defs>
+
+  <!-- Graph / Tree -->
+  <line x1="64" y1="36" x2="36" y2="72" class="line"/>
+  <line x1="64" y1="36" x2="92" y2="72" class="line"/>
+  <line x1="36" y1="72" x2="36" y2="96" class="line"/>
+  <line x1="92" y1="72" x2="92" y2="96" class="line"/>
+
+  <!-- Nodes -->
+  <circle cx="64" cy="36" r="6" class="node"/>
+  <circle cx="36" cy="72" r="6" class="node"/>
+  <circle cx="92" cy="72" r="6" class="node"/>
+  <circle cx="36" cy="96" r="6" class="node"/>
+  <circle cx="92" cy="96" r="6" class="node"/>
+
+</svg>

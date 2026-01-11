@@ -1,4 +1,4 @@
-import {Metadata} from "next"
+//import {Metadata} from "next"
 import data from "@/data/about.json"
 import React from "react";
 

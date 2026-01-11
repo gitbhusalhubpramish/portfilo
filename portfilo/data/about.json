@@ -37,6 +37,7 @@
                     {
                       "tag": "img",
                       "alt": "Next",
+                      "cls":"h-25",
                       "src": "/next.svg"
                     }
                   ]
@@ -67,6 +68,7 @@
                     {
                       "tag": "img",
                       "alt": "Python",
+                      "cls":"h-25",
                       "src": "/python.svg"
                     }
                   ]
@@ -97,6 +99,7 @@
                     {
                       "tag": "img",
                       "alt": "DSA",
+                      "cls":"h-25",
                       "src": "/dsa.svg"
                     }
                   ]
@@ -127,6 +130,7 @@
                     {
                       "tag": "img",
                       "alt": "Pygame",
+                      "cls":"h-25",
                       "src": "/pygame.svg"
                     }
                   ]
@@ -156,6 +160,7 @@
                   "elm": [
                     {
                       "tag": "img",
+                      "cls":"h-25",
                       "alt": "Cybersecurity",
                       "src": "/cybersecurity.svg"
                     }
@@ -186,6 +191,7 @@
                   "elm": [
                     {
                       "tag": "img",
+                      "cls":"h-25",
                       "alt": "ML",
                       "src": "/ml.svg"
                     }
@@ -216,6 +222,7 @@
                   "elm": [
                     {
                       "tag": "img",
+                      "cls":"h-25",
                       "alt": "Linux",
                       "src": "/linux.svg"
                     }
