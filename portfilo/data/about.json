@@ -1,20 +1,6 @@
 {
   "data": [
     {
-      "Heading": "About Me",
-      "des": [
-        {
-          "cls": "flex m-3 mx-8",
-          "tag": "div",
-          "elm": [
-			{"tag":"div","cls":" w-2 mr-4 bg-gray-600", "elm":""},
-			{"tag":"p", "elm":"I am a self-taught programmer with a strong interest in building real projects and understanding fundamentals deeply. I started coding at the age of 11 and have since explored multiple areas of computer science through hands-on learning, problem solving, and consistent practice."}
-          
-          ]
-        }
-      ]
-    },
-    {
 		"Heading": "Skills",
 		"des": [
 		{
@@ -241,6 +227,29 @@
           ]
         }
       ]
-    }
+    },
+    {
+		"Heading":"Achivements",
+		"des":[
+			{
+				"tag":"div",
+				"cls": "mt-4 flex bg-[#121830] text-[#e0e0e0] gap-5 sm:gap-10 p-7 px-7 rounded-2xl shadow-[inset_0_8px_15px_#0b1120,inset_0_-8px_15px_#0b1120,inset_0_0_30px_#0b1120] [&>*]:w-full [&>*]:bg-[#1f2940] [&>*]:sm:p-7 [&>*]:p-5 [&>*]:border [&>*]:border-[#3d5afe] [&>*]:rounded-3xl [&>*]:transition-transform [&>*]:hover:bg-[#26314f] [&>*]:shadow-lg [&>*]:shadow-[#0b1120]/50 ",
+				"elm":[
+					{
+						"tag":"div",
+						"cls":"",
+						"elm":[
+							{
+								"tag":"div",
+								"cls":"",
+								"elm":""
+								
+							}
+						]
+					}
+				]
+			}
+		]
+	}
   ]
 }
