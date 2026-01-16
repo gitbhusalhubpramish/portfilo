@@ -4,6 +4,7 @@ import data from "@/data/about.json"
 import React from "react";
 import AboutMe from "./about.js"
 import Skills from "./skills.js"
+import Achivements from "./achivements.js"
 
 export const metadata = {
   title: "About me",
@@ -43,6 +44,7 @@ export default function About() {
     <div className="sm:m-[15%] mx-0 m-30">
 		<AboutMe/>
 		<Skills/>
+		<Achivements/>
     </div>
   )
 }
