@@ -3,6 +3,7 @@
 import data from "@/data/about.json"
 import React from "react";
 import AboutMe from "./about.js"
+import Skills from "./skills.js"
 
 export const metadata = {
   title: "About me",
@@ -41,14 +42,7 @@ export default function About() {
   return (
     <div className="sm:m-[15%] mx-0 m-30">
 		<AboutMe/>
-      {data.data.map((item, index) => (
-        <div key={index} className="m-10 text-gray-300">
-          <h1 className="text-5xl font-bold text-[#33a400]">{item.Heading}</h1>
-          {item.des.map((itm, idx) =>
-            renderElem(itm)
-          )}
-        </div>
-      ))}
+		<Skills/>
     </div>
   )
 }
