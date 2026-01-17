@@ -1,10 +1,14 @@
 {
-	"Heading": "Achievements",
-	"des": [
-		{
-			"title": "Awarded First Place in Hackathon",
-			"bgimg": "/hktbg.jpg",
-			"des": "Won 1st place in the province-level coding and animation hackathon organized by Digischool and Cannon Secondary School (Lumbini Province). Competed in Category 3 (Classes 6–7) and built a scientific calculator using Python and NumPy. Represented Nawajyoti English Boarding School."
-		}
-	]
+  "Heading": "Achievements",
+  "des": [
+    {
+      "title": "Awarded First Place in Hackathon",
+      "bgimg": "/hktbg.jpg",
+      "des": [
+        "Secured 1st place in a 2-hour province-level coding and animation hackathon organized by Digischool and Cannon Secondary School in Lumbini Province, competing solo in Category 3 (Classes 6–7).",
+        "Represented Nawajyoti English Boarding School as the only participant from the school and defeated opponents by over 300 points, showcasing exceptional problem-solving speed and accuracy.",
+        "Developed a Python-based scientific calculator featuring both basic operations and advanced vector and matrix calculations using NumPy, demonstrating strong programming skills and efficient algorithm design under time constraints."
+      ]
+    }
+  ]
 }
