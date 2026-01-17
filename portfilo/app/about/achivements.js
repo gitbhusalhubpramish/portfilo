@@ -40,6 +40,7 @@ export default function Achivements() {
 						<div className="flex mt-1 ml-1">
 							<div className="w-1 mr-2 bg-gray-600 rounded-full" />
 							<div>
+							{item.rimg && ( <img src={item.rimg} alt="img"  className="sm:float-right sm:w-1/6 w-full" />)}
 							{item.des.map((par,idx)=>(
 							<p key={idx} className="text-[#e0e0e0] mt-2 text-sm leading-relaxed">
 								{par}
