@@ -1,15 +1,51 @@
 {
-  "Heading": "Achievements",
-  "des": [
-    {
-      "title": "Awarded First Place in Hackathon",
-      "bgimg": "/hktbg.jpg",
-      "rimg": "/hktnctrft.jpg",
-      "des": [
-        "Secured 1st place in a 2-hour province-level coding and animation hackathon organized by Digischool and Cannon Secondary School in Lumbini Province, competing solo in Category 3 (Classes 6–7).",
-        "Represented Nawajyoti English Boarding School as the only participant from the school and defeated opponents by over 300 points, showcasing exceptional problem-solving speed and accuracy.",
-        "Developed a Python-based scientific calculator featuring both basic operations and advanced vector and matrix calculations using NumPy, demonstrating strong programming skills and efficient algorithm design under time constraints."
-      ]
-    }
-  ]
+	"Heading": "Achievements",
+	"des": [
+		{
+			"title": "Awarded First Place in Hackathon",
+			"bgimg": "/hktbg.jpg",
+			"rimg": "/hktnctrft.jpg",
+			"org": "Cannon Secondary School and Digi School Lumbini province",
+			"orgr":{
+				"Chairman": {"name":"Thaneshowor Paudel"},
+				"Chief Guest": {"name": "Rajib Gautam", "des": "CEO, TUNA Technology"},
+				"Program Co-ordinator": {"name":"Birendra Kumar Yadav"}
+			},
+			"des": [
+				"Secured 1st place in a 2-hour province-level coding and animation hackathon organized by Digischool and Cannon Secondary School in Lumbini Province, competing solo in Category 3 (Classes 6–7).",
+				"Represented Nawajyoti English Boarding School as the only participant from the school and defeated opponents by over 300 points, showcasing exceptional problem-solving speed and accuracy.",
+				"Developed a Python-based scientific calculator featuring both basic operations and advanced vector and matrix calculations using NumPy, demonstrating strong programming skills and efficient algorithm design under time constraints."
+			]
+		
+		},
+		{
+			"title": "HackerRank Frontend Developer (React) Certification",
+			"bgimg": "/frontend_developer_react certificate.png",
+			"rimg": "/hackerrank-logo.png",
+			"org": "HackerRank",
+			"orgr": {
+				"Verified By": {"name": "Harishankaran K", "des":"CTO, HackerRank"}
+			},
+			"des": [
+				"Certified as a React (Frontend) Developer by HackerRank after successfully completing the proctored skills assessment.",
+				"Demonstrated practical proficiency in building React applications, including JSX, components, props, state management, hooks, event handling, conditional rendering, and strong fundamentals in JavaScript and CSS.",
+				"Validated real-world frontend development skills and problem-solving ability, showcasing verified technical expertise to potential employers and peers."
+			],
+			"link":"https://www.hackerrank.com/profile/bpramish71",
+			"profile": true
+		},
+		{
+			"title": "200 Days of LeetCode Challenge",
+			"bgimg": "/200days-leetcode.png",
+			"rimg": "/leetcode-logo.png",
+			"org": "LeetCode",
+			"des": [
+				"Successfully completed 200 consecutive days of solving algorithm and data structure problems on LeetCode, demonstrating consistent practice and dedication.",
+				"Solved a wide range of problems across multiple categories including Arrays, Strings, Trees, Graphs, Dynamic Programming, and Backtracking.",
+				"Strengthened problem-solving skills, optimized coding efficiency, and improved understanding of algorithmic patterns for real-world software development."
+			],
+			"link": "https://leetcode.com/u/bhusalprit/",
+			"profile":true
+		}
+	]
 }
