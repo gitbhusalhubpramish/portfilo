@@ -1,0 +1,26 @@
+{
+	"heading":"Philosophy",
+	"des":[
+		{
+			"quote": "Self-education is, I firmly believe, the only kind of education there is.",
+			"speaker": "Isaac Asimov",
+			"des": [
+				"I was first introduced to programming in Grade 6 through Scratch at DigiSchool, where I learned the basics of problem-solving and logical thinking. After gaining this foundation, I chose not to depend only on teachers and formal classes. My curiosity pushed me to learn on my own, explore new ideas, and move forward at my own pace. Over time, this habit shaped me into a self-educated programmer at a young age, someone who believes that true learning comes from curiosity, effort, and creating one’s own path."
+			]
+		},
+		{
+			"quote": "To understand any creation, first understand the mind behind it.",
+			"speaker": "Pramish Bhusal",
+			"des": [
+				"Every creation, whether a discovery, invention, or work of art, carries the thought and vision of its creator. By understanding the mind behind it, we can truly grasp the essence of what was made and why."
+			]
+		},
+		{
+			"quote": "Intelligence is the ability to adapt to change.",
+			"speaker": "Stephen Hawking",
+			"des": [
+				"Intelligence is more than just knowledge—it’s the capacity to learn from experiences, solve problems, and adjust effectively to new or changing environments. Adapting to change is the essence of true intelligence."
+			]
+		}
+	]
+}

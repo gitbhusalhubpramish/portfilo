@@ -1,0 +1,47 @@
+{
+	"Heading": "Skills",
+	"des":[
+		{
+			"title":"Next.js & Modern Web Development",
+			"img":"/next.svg",
+			"alt": "Next",
+			"des": "I am good at Next.js and Modern development; this website was built by me using Next.js."
+		},
+		{
+			"title":"Python Programming",
+			"img":"/python.svg",
+			"alt": "Python",
+			"des": "I have strong Python skills and can handle data structures, algorithms, and scripting tasks effectively."
+		},
+		{
+			"title":"Data Structures & Algorithms",
+			"img":"/dsa.svg",
+			"alt": "Data Structures & Algorithms",
+			"des": "I have experience implementing algorithms and data structures with efficient logic and clean code."
+		},
+		{
+			"title":"Pygame & Game Logic",
+			"img":"/pygame.svg",
+			"alt": "Pygame",
+			"des": "I create games using Pygame with fully functional game logic, animations, and interactive elements."
+		},
+		{
+			"title":"Cybersecurity Fundamentals",
+			"img":"/cybersecurity.svg",
+			"alt": "Cybersecurity",
+			"des": "I understand core cybersecurity concepts including network security, ethical hacking, and system protection."
+		},
+		{
+			"title":"Machine Learning & AI",
+			"img":"/ml.svg",
+			"alt": "ML",
+			"des": "I have knowledge of machine learning and AI concepts, and can implement simple models and experiments."
+		},
+		{
+			"title":"Linux & System Usage",
+			"img":"/linux.svg",
+			"alt": "Linux",
+			"des": "I am comfortable using Linux systems, command-line tools, and basic system administration tasks"
+		}
+	]
+}

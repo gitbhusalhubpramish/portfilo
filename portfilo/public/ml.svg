@@ -1,0 +1,47 @@
+<svg width="160" height="128" viewBox="0 0 160 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .node { fill:#38bdf8 }
+      .line { stroke:#38bdf8; stroke-width:2; opacity:0.85 }
+    </style>
+  </defs>
+
+  <!-- Connections: Input -> Hidden -->
+  <line x1="32" y1="32" x2="80" y2="24" class="line"/>
+  <line x1="32" y1="32" x2="80" y2="52" class="line"/>
+
+  <line x1="32" y1="64" x2="80" y2="24" class="line"/>
+  <line x1="32" y1="64" x2="80" y2="52" class="line"/>
+  <line x1="32" y1="64" x2="80" y2="80" class="line"/>
+
+  <line x1="32" y1="96" x2="80" y2="52" class="line"/>
+  <line x1="32" y1="96" x2="80" y2="80" class="line"/>
+
+  <line x1="32" y1="96" x2="80" y2="108" class="line"/>
+  <line x1="32" y1="64" x2="80" y2="108" class="line"/>
+
+  <!-- Connections: Hidden -> Output -->
+  <line x1="80" y1="24" x2="128" y2="40" class="line"/>
+  <line x1="80" y1="52" x2="128" y2="40" class="line"/>
+  <line x1="80" y1="80" x2="128" y2="40" class="line"/>
+  <line x1="80" y1="108" x2="128" y2="40" class="line"/>
+  <line x1="80" y1="24" x2="128" y2="90" class="line"/>
+  <line x1="80" y1="52" x2="128" y2="90" class="line"/>
+  <line x1="80" y1="80" x2="128" y2="90" class="line"/>
+  <line x1="80" y1="108" x2="128" y2="90" class="line"/>
+
+  <!-- Input layer -->
+  <circle cx="32" cy="32" r="5" class="node"/>
+  <circle cx="32" cy="64" r="5" class="node"/>
+  <circle cx="32" cy="96" r="5" class="node"/>
+
+  <!-- Hidden layer -->
+  <circle cx="80" cy="24" r="5" class="node"/>
+  <circle cx="80" cy="52" r="5" class="node"/>
+  <circle cx="80" cy="80" r="5" class="node"/>
+  <circle cx="80" cy="108" r="5" class="node"/>
+
+  <!-- Output layer -->
+  <circle cx="128" cy="40" r="6" class="node"/>
+  <circle cx="128" cy="90" r="6" class="node"/>
+</svg>
