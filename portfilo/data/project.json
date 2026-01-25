@@ -1,13 +1,9 @@
 {
 	"projects":[
-		{
-			"topic":"ML",
-			"list":[
+		
 				{
 					"title":"Handwritern number to digital number converter",
 					"link":"https://github.com/gitbhusalhubpramish/MLing"
 				}
-			]
-		}
 	]
 }
