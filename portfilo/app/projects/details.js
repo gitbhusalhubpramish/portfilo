@@ -1,6 +1,7 @@
 "use client"
 import {useEffect, useState} from "react"
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 export default function Details({project}){
 	const [des,setDes] = useState("")
 	const [readme, setReadme] = useState(null)
@@ -37,10 +38,10 @@ export default function Details({project}){
 					<p className="ml-2 text-gray-300 text-sm">{des}</p>
 					</div>
 			</summary>
-			<div>
-			<ReactMarkdown>
-			{readme}
-			</ReactMarkdown>
+			<div className="mb-15 mx-5 sm:mx-7 prose prose-invert max-w-none [&>h1]:text-3xl [&>h1]:font-bold  [&>h2]:text-2xl ">
+				<ReactMarkdown remarkPlugins={[remarkGfm]}>
+					{readme ?? ""}
+				</ReactMarkdown>
 			</div>
 		</details>
 	)
