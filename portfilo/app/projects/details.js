@@ -2,13 +2,22 @@
 import {useEffect, useState} from "react"
 export default function Details({project}){
 	const [des,setDes] = useState("")
+	const [readme, setReadme] = useState(null)
 	const rl = project?.link || ""
+	
 	useEffect(()=>{
 		const [,owner, repo] = new URL(project.link).pathname.split("/")
 		fetch(`https://api.github.com/repos/${owner}/${repo}`)
 			.then(res=>res.json())
 			.then(data=>setDes(data.description || ""))
 			.catch(err=>console.error(err))
+			fetch(`https://raw.githubusercontent.com/${owner}/${repo}/main/README.md`)
+    .then(res => {
+      if (!res.ok) throw new Error("README not found")
+      return res.text()
+    })
+    .then(data => setReadme(data))
+    .catch(() => setReadme("No README available"))
 	},[rl])
 	
 	return (
@@ -27,7 +36,7 @@ export default function Details({project}){
 					<p className="ml-2 text-gray-300 text-sm">{des}</p>
 					</div>
 			</summary>
-			<div>hello</div>
+			<div>{readme}</div>
 		</details>
 	)
 }
