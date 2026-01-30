@@ -38,7 +38,8 @@ export default function Details({project}){
 					<p className="ml-2 text-gray-300 text-sm">{des}</p>
 					</div>
 			</summary>
-			<div className="mb-15 mx-5 sm:mx-7 prose prose-invert max-w-none [&>h1]:text-3xl [&>h1]:font-bold  [&>h2]:text-2xl ">
+			<div className="mx-5 sm:mx-7 mb-16 prose prose-invert max-w-none[&>h1]:text-3xl [&>h1]:font-bold [&>h2]:text-2xl [&>h3]:text-xl [&>pre]:bg-[#343541] [&>pre]:rounded-lg [&>pre]:p-4 [&>pre]:text-white [&>code]:bg-[#343541] [&>code]:rounded-lg [&>code]:p-1 [&>code]:text-white [&>*]:m-1">
+
 				<ReactMarkdown remarkPlugins={[remarkGfm]}>
 					{readme ?? ""}
 				</ReactMarkdown>
