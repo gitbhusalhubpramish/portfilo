@@ -1,5 +1,6 @@
 "use client"
 import {useEffect, useState} from "react"
+import ReactMarkdown from "react-markdown";
 export default function Details({project}){
 	const [des,setDes] = useState("")
 	const [readme, setReadme] = useState(null)
@@ -36,7 +37,11 @@ export default function Details({project}){
 					<p className="ml-2 text-gray-300 text-sm">{des}</p>
 					</div>
 			</summary>
-			<div>{readme}</div>
+			<div>
+			<ReactMarkdown>
+			{readme}
+			</ReactMarkdown>
+			</div>
 		</details>
 	)
 }
