@@ -25,20 +25,20 @@ export default function Details({project}){
 	return (
 		<details className="bg-[#1f2940] w-full flex flex-col gap-3 flex-shrink-0  border border-[#3d5afe] rounded-3xl transition-transform  shadow-lg shadow-[#0b1120]/50 overflow-hidden group">
 			<summary className="list-none mb-15 [&::marker]:hidden mx-5 sm:mx-7 cursor-pointer">
-				<div className=" mt-10 flex">
-					<h1 className="text-3xl font-bold text-[#33a400]/85 flex-1">{project.title}</h1>
+				<div className=" mt-10 flex ">
+					<h1 className="sm:text-4xl text-3xl font-bold text-[#33a400]/85 flex-1">{project.title}</h1>
 					<div className="w-1/5 flex items-center justify-center">
 						<div
-							className="h-10 w-10 rotate-45 border-b-2 border-r-2 transition-transform group-open:-rotate-[135deg]"
+							className="h-10 w-10 rotate-45 border-b-2 border-r-2 transition-transform group-open:-rotate-[135deg] origin-[75%_75%]"
 						/>
 					</div>
 				</div>
-				<div className="flex mt-3">
+				<div className="flex mt-3 group-open:hidden">
 					<div className="w-2 bg-gray-600"/>
 					<p className="ml-2 text-gray-300 text-sm">{des}</p>
 					</div>
 			</summary>
-			<div className="mx-5 sm:mx-7 mb-16 prose prose-invert max-w-none [&>h1]:text-3xl [&>h1]:font-bold [&>h2]:text-2xl [&>h3]:text-xl [&>pre]:bg-[#343541] [&>pre]:rounded-lg [&>pre]:p-4 [&>pre]:text-white [&_code]:bg-[#343541] [&_code]:rounded-lg [&_code]:p-1 [&_code]:text-white [&>*]:m-1 [&>h1]:mt-4 [&>h2]:mt-3 [&>h3]-mt-2 [&>ul]:list-disc [&>ul]:ml-10 [&>table]:min-w-2/3 [&>table]:text-center [&>table_*]:border-1 [&>table]:border-white">
+			<div className="mx-5 sm:mx-7 mb-16 prose prose-invert max-w-none [&>h1]:text-3xl [&>h1]:font-bold [&>h2]:text-2xl [&>h3]:text-xl [&>pre]:bg-[#343541] [&>pre]:rounded-lg [&>pre]:p-4 [&>pre]:text-white [&_code]:bg-[#343541] [&_code]:rounded-lg [&_code]:p-1 [&_code]:text-white [&>*]:m-1 [&>h1]:mt-4 [&>h2]:mt-3 [&>h3]-mt-2 [&>ul]:list-disc [&>ul]:ml-10 [&>table]:min-w-2/3 [&>table]:text-center [&>table_*]:border-1 [&>table]:border-white [&>table]:overflow-auto [&>pre]:overflow-auto">
 
 				<ReactMarkdown remarkPlugins={[remarkGfm]}>
 					{readme ?? ""}
