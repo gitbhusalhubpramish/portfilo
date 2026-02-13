@@ -5,13 +5,14 @@ import remarkGfm from "remark-gfm";
 export default function Details({project}){
 	const [des,setDes] = useState("")
 	const [readme, setReadme] = useState(null)
+	const [topics,setTopics] = useState([])
 	const rl = project?.link || ""
 	
 	useEffect(()=>{
 		const [,owner, repo] = new URL(project.link).pathname.split("/")
 		fetch(`https://api.github.com/repos/${owner}/${repo}`)
 			.then(res=>res.json())
-			.then(data=>setDes(data.description || ""))
+			.then(data=>{setDes(data.description || ""); setTopics(data.topics || "")})
 			.catch(err=>console.error(err))
 			fetch(`https://raw.githubusercontent.com/${owner}/${repo}/main/README.md`)
     .then(res => {
@@ -36,7 +37,15 @@ export default function Details({project}){
 				<div className="flex mt-3 group-open:hidden">
 					<div className="w-2 bg-gray-600"/>
 					<p className="ml-2 text-gray-300 text-sm">{des}</p>
+				</div>
+				<div className="group-open:hidden mt-5">
+					<hr className="border-t-[#3d5afe]"/>
+					<div className="flex justify-evenly flex-wrap m-3">
+						{topics.map((topic, index)=>(
+						<div className=" rounded-xl px-1 text-[#478be6] bg-[#4184e41a]" key={index}>{topic}</div>
+						))}
 					</div>
+				</div>
 			</summary>
 			<div className="mx-5 sm:mx-7 mb-16 prose prose-invert max-w-none [&>h1]:text-3xl [&>h1]:font-bold [&>h2]:text-2xl [&>h3]:text-xl [&>pre]:bg-[#343541] [&>pre]:rounded-lg [&>pre]:p-4 [&>pre]:text-white [&_code]:bg-[#343541] [&_code]:rounded-lg [&_code]:p-1 [&_code]:text-white [&>*]:m-1 [&>h1]:mt-4 [&>h2]:mt-3 [&>h3]-mt-2 [&>ul]:list-disc [&>ul]:ml-10 [&>table]:min-w-2/3 [&>table]:text-center [&>table_*]:border-1 [&>table]:border-white [&>table]:overflow-auto [&>pre]:overflow-auto">
 
@@ -44,6 +53,14 @@ export default function Details({project}){
 					{readme ?? ""}
 				</ReactMarkdown>
 			</div>
+			<div className=" m-8 mb-15">
+					<hr className="border-t-[#3d5afe]"/>
+					<div className="flex justify-evenly flex-wrap m-3">
+						{topics.map((topic, index)=>(
+						<div className=" rounded-xl px-1 text-[#478be6] bg-[#4184e41a]" key={index}>{topic}</div>
+						))}
+					</div>
+				</div>
 		</details>
 	)
 }
