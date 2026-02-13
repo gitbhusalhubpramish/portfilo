@@ -8,6 +8,14 @@
 				{
 					"title":"Chess Game",
 					"link": "https://github.com/gitbhusalhubpramish/chess"
+				},
+				{
+					"title":"Flappy bird Game",
+					"link": "https://github.com/gitbhusalhubpramish/flappybird/"
+				},
+				{
+					"title": "File encryptor and decryptor",
+					"link":"https://github.com/gitbhusalhubpramish/ransomeware"
 				}
 	]
 }
