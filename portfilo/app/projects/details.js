@@ -42,7 +42,7 @@ export default function Details({project}){
 					<hr className="border-t-[#3d5afe]"/>
 					<div className="flex justify-evenly flex-wrap m-3">
 						{topics.map((topic, index)=>(
-						<div className=" rounded-xl px-1 text-[#478be6] bg-[#4184e41a]" key={index}>{topic}</div>
+						<div className=" rounded-xl px-2 m-2 text-[#478be6] bg-[#4184e41a]" key={index}>{topic}</div>
 						))}
 					</div>
 				</div>
