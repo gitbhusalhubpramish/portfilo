@@ -46,6 +46,9 @@ export default function Details({project}){
 						))}
 					</div>
 				</div>
+				<div className="text-end ">
+				<a className="text-gray-500 cursor-pointer underline group-open:hidden decoration-dashed" href={project.link} target="_blank">view on Github{">"}</a>
+			</div>
 			</summary>
 			<div className="mx-5 sm:mx-7 mb-16 prose prose-invert max-w-none [&>h1]:text-3xl [&>h1]:font-bold [&>h2]:text-2xl [&>h3]:text-xl [&>pre]:bg-[#343541] [&>pre]:rounded-lg [&>pre]:p-4 [&>pre]:text-white [&_code]:bg-[#343541] [&_code]:rounded-lg [&_code]:p-1 [&_code]:text-white [&>*]:m-1 [&>h1]:mt-4 [&>h2]:mt-3 [&>h3]-mt-2 [&>ul]:list-disc [&>ul]:ml-10 [&>table]:min-w-2/3 [&>table]:text-center [&>table_*]:border-1 [&>table]:border-white [&>table]:overflow-auto [&>pre]:overflow-auto">
 
@@ -53,7 +56,7 @@ export default function Details({project}){
 					{readme ?? ""}
 				</ReactMarkdown>
 			</div>
-			<div className=" m-8 mb-15">
+			<div className=" m-8 ">
 					<hr className="border-t-[#3d5afe]"/>
 					<div className="flex gap-3 flex-wrap m-3">
 						{topics.map((topic, index)=>(
@@ -61,6 +64,9 @@ export default function Details({project}){
 						))}
 					</div>
 				</div>
+			<div className="text-end m-8 mb-15 decoration-dashed">
+				<a className="text-gray-500 cursor-pointer underline" href={project.link} target="_blank">view on Github{">"}</a>
+			</div>
 		</details>
 	)
 }
