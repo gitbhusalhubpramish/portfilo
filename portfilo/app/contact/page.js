@@ -17,7 +17,18 @@ export default function Contact(){
 									<p className="font-thin text-gray-300">{info.real_name}</p>
 									</div>
 								</div>
-								<div>hi</div>
+								<div className="flex-row gap-2">
+									<div className="flex items-center ">
+										<div className="h-4 w-4"><img src={info.locaionpic}/></div>
+										<p>{info.location}</p>
+									</div>
+									{info.scl.map((scl, index)=>(
+									<div key={index} className="flex items-center gap-1">
+										<div className="h-4 w-4"><img src={info.sclimg}/></div>
+										<p>{scl.name}</p>
+									</div>
+									))}
+								</div>
 							</div>
 						</div>
 					</div>

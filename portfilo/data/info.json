@@ -6,8 +6,8 @@
 	"locaionpic": "loc.svg",
 	"sclimg": "scl.svg",
 	"scl":[
-		{"from":"4", "to": "8", "name":"NawaJyoti English Boarding School"},
-		{"from":"Nursery", "to":"3", "name":"Nobel Academy Secondary Boarding School"}
+		{"name":"NawaJyoti English Boarding School"},
+		{"name":"Nobel Academy Secondary Boarding School"}
 	],
 	"gmail":"bpramish71@gmail.com",
 	"gmailimg": "gmail.svg",
