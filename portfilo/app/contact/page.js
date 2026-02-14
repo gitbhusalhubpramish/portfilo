@@ -17,18 +17,43 @@ export default function Contact(){
 									<p className="font-thin text-gray-300">{info.real_name}</p>
 									</div>
 								</div>
-								<div className="flex-row gap-2">
-									<div className="flex items-center ">
-										<div className="h-4 w-4"><img src={info.locaionpic}/></div>
-										<p>{info.location}</p>
+								<div className="flex flex-wrap gap-3 mt-4">
+									{/* Location */}
+									<div className="flex items-center gap-2">
+										<div className="h-5 w-5">
+											<img src={info.locaionpic} className="h-full w-full object-contain" />
+										</div>
+										<p className="text-sm text-[#cbd5e1]">{info.location}</p>
 									</div>
-									{info.scl.map((scl, index)=>(
-									<div key={index} className="flex items-center gap-1">
-										<div className="h-4 w-4"><img src={info.sclimg}/></div>
-										<p>{scl.name}</p>
-									</div>
+									<div className="flex-col flex gap-2 flex-wrap  justify-around">
+									{/* Schools */}
+									{info.scl.map((scl, index) => (
+										<div key={index} className="flex items-center gap-2 flex-1">
+											<div className="h-5 w-5">
+												<img src={info.sclimg} className="h-full w-full object-contain" />
+											</div>
+											<p className="text-sm text-[#cbd5e1]">{scl.name}</p>
+										</div>
 									))}
+									</div>
+									<div className="flex-col flex gap-2 justify-around">
+										{/* Social Media */}
+										{info.social.map((media, index) => (
+											<div key={index} className="flex w-full items-center gap-2">
+												<div className="h-5 w-5">
+													<img src={`/${media.img}`} className="h-full w-full object-contain opacity-80" />
+												</div>
+												<a
+													href={media.href}
+													className="text-sm text-[#4fd1ff] hover:text-[#00c4ff] underline transition-colors duration-200"
+												>
+													{media.name}
+												</a>
+											</div>
+										))}
+									</div>
 								</div>
+
 							</div>
 						</div>
 					</div>
