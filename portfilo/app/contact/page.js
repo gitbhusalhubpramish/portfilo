@@ -7,8 +7,8 @@ export default function Contact(){
 					<div className="mt-4 flex flex-wrap bg-[#121830] text-[#e0e0e0] gap-5 sm:gap-10 pt-4 pb-7 px-7 rounded-2xl relative shadow-[inset_0_8px_15px_#0b1120,inset_0_-8px_15px_#0b1120,inset_0_0_30px_#0b1120] flex">
 						<div className="bg-[#1f2940] w-full flex flex-col gap-3 flex-shrink-0  border border-[#3d5afe] rounded-3xl transition-transform  shadow-lg shadow-[#0b1120]/50 overflow-hidden p-8">
 							<h1 className="sm:text-5xl text-3xl font-bold text-[#33a400]">Info</h1>
-							<div className="flex flex-wrap">
-								<div className="justify-center items-center flex flex-col">
+							<div className="flex flex-wrap sm:flex-row flex-col">
+								<div className="justify-center items-center flex flex-col flex-1">
 									<div className="rounded-full border-1 border-[#3d5afe] overflow-hidden aspect-square w-7/10">
 										<img className="object-cover w-full h-full" src={info.pic}/>
 									</div>
@@ -17,7 +17,7 @@ export default function Contact(){
 									<p className="font-thin text-gray-300">{info.real_name}</p>
 									</div>
 								</div>
-								<div className="flex flex-col flex-wrap gap-3 mt-4">
+								<div className="flex flex-col w-1/2 flex-wrap gap-3 mt-4">
 									{/* Location */}
 									<div className="flex items-center gap-2">
 										<div className="h-5 w-5">
