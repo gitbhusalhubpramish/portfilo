@@ -3,7 +3,7 @@ import {useState} from "react"
 import info from "@/data/info.json"
 export default function Contact(){
 	const [files, setFiles] = useState([])
-	const [formData, setFormData] = useState({email:"", message:"", files:"", subject:"no subject"})
+	const [formData, setFormData] = useState({reply:"", message:"", attachment:files, subject:""})
 	const [message, setMessage] = useState("")
 	const [loading, setLoading] = useState(false)
 	const handelSubmit = async (e)=>{
@@ -96,14 +96,14 @@ export default function Contact(){
 								<div className="flex flex-wrap w-full mb-2">
 									<label htmlFor="subject" className="text-xl">Subject:</label>
 									<div className="px-5 w-full">
-									<input id ="subject" className= "w-full bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] flex-1" placeholder="Subject"/>
+									<input id ="subject" className= "w-full bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] flex-1" placeholder="Subject" name="subject" value={formData.subject} onChange={(e)=>setFormData({...formData,[e.target.name]:e.target.value})}/>
 									</div>
 								</div> 
 								<div className=" w-full">
 									
 									<label htmlFor="message" className="text-xl">Message:</label>
 									<div className="px-5 pb-0 w-full">
-									<textarea id ="message" className= "bg-[#0b1120] text-[#e5e7eb]  placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] w-full h-40 justify-start" placeholder="Your Message" required/></div>
+									<textarea id ="message" className= "bg-[#0b1120] text-[#e5e7eb]  placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] w-full h-40 justify-start" name="message" placeholder="Your Message" value={formData.message} onChange={(e)=>setFormData({...formData,[e.target.name]:e.target.value})} required/></div>
 									{(files.length>0)&&(
 									<div className="m-5 sm:flex-row flex-wrap flex flex-row">
 									{files.map((file,index)=>(
@@ -133,7 +133,7 @@ export default function Contact(){
 								<div className="flex flex-wrap w-full mb-2">
 									<label htmlFor="reply" className="text-xl">Get reply on:</label>
 									<div className="px-5 w-full">
-									<input id ="reply" type="email" className= "w-full bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] flex-1" placeholder="yourname@domain.com" required/>
+									<input id ="reply" type="email" className= "w-full bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] flex-1" placeholder="yourname@domain.com" name="reply" required value={formData.reply} onChange={(e)=>setFormData({...formData,[e.target.name]:e.target.value})}/>
 									</div>
 								</div> 
 								<div className="flex justify-end mt-5 px-5">
