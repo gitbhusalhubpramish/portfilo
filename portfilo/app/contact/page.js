@@ -58,6 +58,19 @@ export default function Contact(){
 						</div>
 					</div>
 				</div>
+				<div className="sm:m-10 m-5 text-gray-300">
+					<div className="mt-4 flex flex-wrap bg-[#121830] text-[#e0e0e0] gap-5 sm:gap-10 pt-4 pb-7 px-7 rounded-2xl relative shadow-[inset_0_8px_15px_#0b1120,inset_0_-8px_15px_#0b1120,inset_0_0_30px_#0b1120] flex">
+						<div className="bg-[#1f2940] w-full flex flex-col gap-3 flex-shrink-0  border border-[#3d5afe] rounded-3xl transition-transform  shadow-lg shadow-[#0b1120]/50 overflow-hidden p-8">
+							<h1 className="sm:text-5xl text-3xl font-bold text-[#33a400]">Message me</h1>
+							<form>
+								<input className="w-full bg-[#0b1120]"/>
+								<input/>
+								<input/>
+							</form>
+						</div>
+						
+					</div>
+				</div>
 		</div>
 	</>
 	)
