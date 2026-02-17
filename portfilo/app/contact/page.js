@@ -6,7 +6,7 @@ export default function Contact(){
 	return (
 	<>
 		<div className="min-h-screen sm:m-[15%] mx-0 m-30">
-				<div className="sm:m-10 m-5 text-gray-300">
+				<div className="sm:m-10  text-gray-300">
 					<div className="mt-4 flex flex-wrap bg-[#121830] text-[#e0e0e0] gap-5 sm:gap-10 pt-4 pb-7 px-7 rounded-2xl relative shadow-[inset_0_8px_15px_#0b1120,inset_0_-8px_15px_#0b1120,inset_0_0_30px_#0b1120] flex">
 						<div className="bg-[#1f2940] w-full flex flex-col gap-3 flex-shrink-0  border border-[#3d5afe] rounded-3xl transition-transform  shadow-lg shadow-[#0b1120]/50 overflow-hidden p-8">
 							<h1 className="sm:text-5xl text-3xl font-bold text-[#33a400]">Info</h1>
@@ -61,29 +61,33 @@ export default function Contact(){
 						</div>
 					</div>
 				</div>
-				<div className="sm:m-10 m-5 text-gray-300">
+				<div className="sm:m-10  text-gray-300">
 					<div className="mt-4 flex flex-wrap bg-[#121830] text-[#e0e0e0] gap-5 sm:gap-10 pt-4 pb-7 px-7 rounded-2xl relative shadow-[inset_0_8px_15px_#0b1120,inset_0_-8px_15px_#0b1120,inset_0_0_30px_#0b1120] flex">
 						<div className="bg-[#1f2940] w-full flex flex-col gap-3 flex-shrink-0  border border-[#3d5afe] rounded-3xl transition-transform  shadow-lg shadow-[#0b1120]/50 overflow-hidden p-8">
 							<h1 className="sm:text-5xl text-3xl font-bold text-[#33a400]">Message me</h1>
-							<form className="m-10">
-								<div className="flex w-full justify-center items-center">
+							<form className="sm:m-10">
+								<div className="flex flex-wrap w-full mb-2">
 									<label htmlFor="subject" className="text-xl">Subject:</label>
-									<input id ="subject" className= "m-5 bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] flex-1" placeholder="Subject"/>
+									<div className="px-5 w-full">
+									<input id ="subject" className= "w-full bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] flex-1" placeholder="Subject"/>
+									</div>
 								</div> 
 								<div className=" w-full">
 									
 									<label htmlFor="message" className="text-xl">Message:</label>
-									<textarea id ="message" className= "m-5 mb-0 bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] w-full h-40 justify-start" placeholder="Your Message"/>
-									<div className="m-5 sm:flex-row flex-wrap flex flex-col">
+									<div className="px-5 pb-0 w-full">
+									<textarea id ="message" className= "bg-[#0b1120] text-[#e5e7eb]  placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] w-full h-40 justify-start" placeholder="Your Message"/></div>
+									{(files.length>0)&&(
+									<div className="m-5 sm:flex-row flex-wrap flex flex-row">
 									{files.map((file,index)=>(
-										<div key={index} className="bg-[#162038] w-1/3 text-[#b0c4de] px-3 py-1 rounded-md border border-[#2e4fff] m-2 text-xl h-10 flex"><p className="flex-1 overflow-hidden">{file.name}</p>
+										<div key={index} className="bg-[#162038] sm:w-1/3 w-full text-[#b0c4de] px-3 py-1 rounded-md border border-[#2e4fff] m-2 text-xl h-10 flex"><p className="flex-1 overflow-hidden">{file.name}</p>
 										<button className="flex justify-center items-center" onClick={()=>setFiles(fls=>fls.filter(item=>item!==file))}>
 											<div className="text-4xl cursor-pointer">
 												&times; 
 											</div>
 										</button></div>
 									))}
-									</div>
+									</div>)}
 									<div className="flex">
 									<label htmlFor="attachment" className="flex m-2 mx-5 cursor-pointer">Attach a file: <img src="linkicon.svg" alt="" className="border-1 border-black rounded-md bg-[#0b1120] ml-2 "/></label>
 									<input
