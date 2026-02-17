@@ -74,9 +74,16 @@ export default function Contact(){
 									
 									<label htmlFor="message" className="text-xl">Message:</label>
 									<textarea id ="message" className= "m-5 mb-0 bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] w-full h-40 justify-start" placeholder="Your Message"/>
+									<div className="m-5 sm:flex-row flex-wrap flex flex-col">
 									{files.map((file,index)=>(
-										<div key={index}>{file.name}</div>
+										<div key={index} className="bg-[#162038] w-1/3 text-[#b0c4de] px-3 py-1 rounded-md border border-[#2e4fff] m-2 text-xl h-10 flex"><p className="flex-1 overflow-hidden">{file.name}</p>
+										<button className="flex justify-center items-center" onClick={()=>setFiles(fls=>fls.filter(item=>item!==file))}>
+											<div className="text-4xl cursor-pointer">
+												&times; 
+											</div>
+										</button></div>
 									))}
+									</div>
 									<div className="flex">
 									<label htmlFor="attachment" className="flex m-2 mx-5 cursor-pointer">Attach a file: <img src="linkicon.svg" alt="" className="border-1 border-black rounded-md bg-[#0b1120] ml-2 "/></label>
 									<input
