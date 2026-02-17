@@ -3,6 +3,33 @@ import {useState} from "react"
 import info from "@/data/info.json"
 export default function Contact(){
 	const [files, setFiles] = useState([])
+	const [formData, setFormData] = useState({email:"", message:"", files:"", subject:"no subject"})
+	const [message, setMessage] = useState("")
+	const [loading, setLoading] = useState(false)
+	const handelSubmit = async (e)=>{
+		e.preventDefault()
+		setLoading(true);
+
+		try {
+			const res = await fetch("/api/contact", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(formData),
+			});
+
+			if (res.ok) {
+				setMessage("Form submitted successfully!");
+				setFormData({ name: "", email: "" });
+			} else {
+				setMessage("Failed to submit form.");
+			}
+		} catch (err) {
+			setMessage("Error: " + err.message);
+		}
+
+			console.log(message)
+		setLoading(false);
+	}
 	return (
 	<>
 		<div className="min-h-screen sm:m-[15%] mx-0 m-30">
@@ -65,7 +92,7 @@ export default function Contact(){
 					<div className="mt-4 flex flex-wrap bg-[#121830] text-[#e0e0e0] gap-5 sm:gap-10 pt-4 pb-7 px-7 rounded-2xl relative shadow-[inset_0_8px_15px_#0b1120,inset_0_-8px_15px_#0b1120,inset_0_0_30px_#0b1120] flex">
 						<div className="bg-[#1f2940] w-full flex flex-col gap-3 flex-shrink-0  border border-[#3d5afe] rounded-3xl transition-transform  shadow-lg shadow-[#0b1120]/50 overflow-hidden p-8">
 							<h1 className="sm:text-5xl text-3xl font-bold text-[#33a400]">Message me</h1>
-							<form className="sm:m-10">
+							<form className="sm:m-10" onSubmit={handelSubmit} method="POST">
 								<div className="flex flex-wrap w-full mb-2">
 									<label htmlFor="subject" className="text-xl">Subject:</label>
 									<div className="px-5 w-full">
@@ -76,7 +103,7 @@ export default function Contact(){
 									
 									<label htmlFor="message" className="text-xl">Message:</label>
 									<div className="px-5 pb-0 w-full">
-									<textarea id ="message" className= "bg-[#0b1120] text-[#e5e7eb]  placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] w-full h-40 justify-start" placeholder="Your Message"/></div>
+									<textarea id ="message" className= "bg-[#0b1120] text-[#e5e7eb]  placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] w-full h-40 justify-start" placeholder="Your Message" required/></div>
 									{(files.length>0)&&(
 									<div className="m-5 sm:flex-row flex-wrap flex flex-row">
 									{files.map((file,index)=>(
@@ -102,6 +129,17 @@ export default function Contact(){
 									/>
 
 									</div>
+								</div>
+								<div className="flex flex-wrap w-full mb-2">
+									<label htmlFor="reply" className="text-xl">Get reply on:</label>
+									<div className="px-5 w-full">
+									<input id ="reply" type="email" className= "w-full bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] flex-1" placeholder="yourname@domain.com" required/>
+									</div>
+								</div> 
+								<div className="flex justify-end mt-5 px-5">
+									<button type="submit" className="bg-[#33a400] text-[#0b1120] px-6 py-2 rounded-lg font-bold hover:bg-[#28a300] transition-colors cursor-pointer" disabled={loading}>
+										Send
+									</button>
 								</div>
 							</form>
 						</div>
