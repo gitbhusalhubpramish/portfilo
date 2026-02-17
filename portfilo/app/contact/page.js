@@ -1,3 +1,5 @@
+"use client"
+import {useState} from "react"
 import info from "@/data/info.json"
 export default function Contact(){
 	return (
@@ -65,7 +67,15 @@ export default function Contact(){
 							<form className="m-10">
 								<div className="flex w-full justify-center items-center">
 									<label for="subject" className="text-xl">Subject:</label>
-									<input id ="subject" className= "m-5 bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] flex-1"/>
+									<input id ="subject" className= "m-5 bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] flex-1" placeholder="Subject"/>
+								</div> 
+								<div className=" w-full justify-center items-center">
+									<label for="message" className="text-xl">Message:</label>
+									<textarea id ="message" className= "m-5 mb-0 bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] w-full h-40 justify-start" placeholder="Your Message"/>
+									<div className="flex">
+									<label for="attachment" className="flex m-2 mx-5 cursor-pointer">Attach a file: <img src="linkicon.svg" alt="" className="border-1 border-black rounded-md bg-[#0b1120] ml-2 "/></label>
+									<input id="attachment" type="file" className="hidden" />
+									</div>
 								</div>
 							</form>
 						</div>
