@@ -62,10 +62,11 @@ export default function Contact(){
 					<div className="mt-4 flex flex-wrap bg-[#121830] text-[#e0e0e0] gap-5 sm:gap-10 pt-4 pb-7 px-7 rounded-2xl relative shadow-[inset_0_8px_15px_#0b1120,inset_0_-8px_15px_#0b1120,inset_0_0_30px_#0b1120] flex">
 						<div className="bg-[#1f2940] w-full flex flex-col gap-3 flex-shrink-0  border border-[#3d5afe] rounded-3xl transition-transform  shadow-lg shadow-[#0b1120]/50 overflow-hidden p-8">
 							<h1 className="sm:text-5xl text-3xl font-bold text-[#33a400]">Message me</h1>
-							<form>
-								<input className="w-full bg-[#0b1120]"/>
-								<input/>
-								<input/>
+							<form className="m-10">
+								<div className="flex w-full justify-center items-center">
+									<label for="subject" className="text-xl">Subject:</label>
+									<input id ="subject" className= "m-5 bg-[#0b1120] text-[#e5e7eb] placeholder-[#94a3b8] border border-[#334155] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38bdf8] focus:border-[#38bdf8] flex-1"/>
+								</div>
 							</form>
 						</div>
 						
