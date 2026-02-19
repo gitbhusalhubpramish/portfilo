@@ -11,10 +11,19 @@ export default function Contact(){
 		setLoading(true);
 
 		try {
+			const form = new FormData();
+        form.append("reply", formData.reply);
+        form.append("message", formData.message);
+        form.append("subject", formData.subject);
+
+        // Append files
+        files.forEach(file => {
+            form.append("attachment", file);
+        });
 			const res = await fetch("/api/contact", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify(formData),
+				body: form,
 			});
 			console.log(formData)
 			console.log("fetched")
