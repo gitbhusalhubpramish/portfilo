@@ -16,18 +16,21 @@ export default function Contact(){
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify(formData),
 			});
-
+			console.log("fetched")
 			if (res.ok) {
 				setMessage("Form submitted successfully!");
-				setFormData({ name: "", email: "" });
+				setFormData({reply:"", message:"", attachment:files, subject:""});
+				console.log(message)
 			} else {
 				setMessage("Failed to submit form.");
+				console.log(message, res)
 			}
 		} catch (err) {
 			setMessage("Error: " + err.message);
+			console.log(message)
 		}
 
-			console.log(message)
+		console.log(message)
 		setLoading(false);
 	}
 	return (
