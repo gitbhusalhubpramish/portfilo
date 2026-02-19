@@ -16,11 +16,13 @@ export default function Contact(){
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify(formData),
 			});
+			console.log(formData)
 			console.log("fetched")
 			if (res.ok) {
 				setMessage("Form submitted successfully!");
+				setFiles([])
 				setFormData({reply:"", message:"", attachment:files, subject:""});
-				console.log(message)
+				console.log(message, res)
 			} else {
 				setMessage("Failed to submit form.");
 				console.log(message, res)
@@ -123,12 +125,18 @@ export default function Contact(){
 									<input
 										id="attachment"
 										type="file"
+										name="attachment"
 										className="hidden"
 										multiple
 										onChange={(e) => {
 											const newFiles = Array.from(e.target.files);
-											setFiles(prevFiles => [...prevFiles, ...newFiles]); // append
+											setFiles(prevFiles => {
+												const updatedFiles = [...prevFiles, ...newFiles];
+												setFormData(prev => ({ ...prev, [e.target.name]: updatedFiles }));
+												return updatedFiles;
+											});
 										}}
+
 									/>
 
 									</div>

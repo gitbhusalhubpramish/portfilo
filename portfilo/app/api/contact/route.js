@@ -1,6 +1,8 @@
-export default async function header(req,res){
-	if (req.method == "POST"){
-		return res.status(200).json({ success: true });
-	}
-	res.status(405).json({ message: "Method not allowed" });
+import { NextResponse } from "next/server";
+
+export async function POST(req) {
+	const body = await req.json();
+	console.log(body);
+
+	return NextResponse.json({ success: true });
 }

@@ -1,0 +1,4 @@
+# Ignore env files anywhere in the project
+**/.env.local
+**/.env.*.local
+
