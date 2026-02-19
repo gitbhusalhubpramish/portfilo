@@ -20,9 +20,10 @@ export default function Contact(){
         files.forEach(file => {
             form.append("attachment", file);
         });
+        console.log(form)
+        console.log("stringfy",JSON.stringify(form))
 			const res = await fetch("/api/contact", {
 				method: "POST",
-				headers: { "Content-Type": "application/json" },
 				body: form,
 			});
 			console.log(formData)
