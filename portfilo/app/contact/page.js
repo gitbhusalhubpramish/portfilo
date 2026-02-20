@@ -9,11 +9,14 @@ export default function Contact(){
 	const handelSubmit = async (e)=>{
 		e.preventDefault()
 		let ok;
-		if (formData.subject===""){
-			ok = confirm("do you want to send message without subject?")
+		if (formData.subject === "") {
+				const ok = confirm("Do you want to send message without subject?");
+				if (!ok) {
+						setLoading(false);
+						return; // Stop sending if user cancels
+				}
 		}
 		setLoading(true);
-		if (ok){
 		try {
 			const form = new FormData();
 				form.append("reply", formData.reply);
@@ -47,7 +50,7 @@ export default function Contact(){
 			setMessage("Error: " + err.message);
 			console.log(message)
 			alert("something went wrong")
-		}}
+		}
 
 		console.log(message)
 		setLoading(false);
