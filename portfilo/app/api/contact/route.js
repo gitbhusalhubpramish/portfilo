@@ -15,6 +15,13 @@ export async function POST(req) {
 				content: Buffer.from(await file.arrayBuffer()),
 			}))
 		);
+		const MAX_SIZE = 5 * 1024 * 1024; // 5MB
+
+		for (const file of files) {
+			if (file.size > MAX_SIZE) {
+				return NextResponse.json({ error: "File too large" }, { status: 400 });
+			}
+		}
 
 		await resend.emails.send({
 			from: "Portfolio <onboarding@resend.dev>",
