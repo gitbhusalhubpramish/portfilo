@@ -1,0 +1,62 @@
+{
+	"display_name": "Prit.py",
+	"real_name": "Pramish Bhusal",
+	"pic": "homeimg.jpg",
+	"location":"Rupendehi, Lumbini, Nepal",
+	"locaionpic": "loc.svg",
+	"sclimg": "scl.svg",
+	"scl":[
+		{"name":"NawaJyoti English Boarding School"},
+		{"name":"Nobel Academy Secondary Boarding School"}
+	],
+	"social": [
+		{
+			"media": "gmail",
+			"name": "bpramish71@gmail.com",
+			"img": "gmail.svg",
+			"href": "mailto:bpramish71@gmail.com"
+		},
+		{
+			"media": "facebook",
+			"name": "Pramish Bhusal",
+			"img": "facebook.svg",
+			"href": "https://www.facebook.com/pramish.bhusal.393143/"
+		},
+		{
+			"media": "instagram",
+			"name": "prit.py",
+			"img": "insta.svg",
+			"href": "https://www.instagram.com/prit.py/"
+		},
+		{
+			"media": "linkedin",
+			"name": "Pramish Bhusal",
+			"img": "linkedin.svg",
+			"href": "https://www.linkedin.com/in/pramish-bhusal-a68a05351/"
+		},
+		{
+			"media": "x",
+			"name": "prit_py",
+			"img": "x.svg",
+			"href": "https://twitter.com/prit_py"
+		},
+		{
+			"media": "github",
+			"name": "gitbhusalhubpramish",
+			"img": "github.svg",
+			"href": "https://github.com/gitbhusalhubpramish"
+		},
+		{
+			"media": "leetcode",
+			"name": "bhusalprit",
+			"img": "leetcode.svg",
+			"href": "https://leetcode.com/bhusalprit/"
+		},
+		{
+			"media": "tiktok",
+			"name": "prit.py",
+			"img": "tiktok.svg",
+			"href": "https://www.tiktok.com/@pramish.bhusal"
+		}
+	]
+}

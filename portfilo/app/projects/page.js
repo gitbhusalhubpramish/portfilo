@@ -1,4 +1,3 @@
-"client site"
 import data from "@/data/project.json"
 import Details from "./details.js"
 export const metadata = {
