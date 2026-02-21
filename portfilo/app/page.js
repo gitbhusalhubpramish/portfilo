@@ -1,9 +1,19 @@
-"use client";
+//"use client";
 import image from "../public/homeimg.jpg";
 import Image from "next/image";
 import timeline from "../data/timeline.json";
 import Link from "next/link";
-
+export const metadata = {
+  title: "Pramish Bhusal – Full Stack Developer Portfolio",
+  description:
+    "Portfolio of Pramish Bhusal showcasing Next.js projects, React apps, JavaScript tools, and API integrations. Explore projects and get in touch.",
+  openGraph: {
+    title: "Pramish Bhusal – Full Stack Developer Portfolio",
+    description:
+      "Next.js, React, JavaScript projects and real-world web apps by Pramish Bhusal.",
+    type: "website",
+  },
+};
 export default function Home() {
 	function Marker ({cls}){
 		return (

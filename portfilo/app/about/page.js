@@ -8,17 +8,15 @@ import Achivements from "./achivements.js"
 import Philosophy from "./philosophy.js"
 
 export const metadata = {
-  title: "About me",
-  description: "Portfolio of Pramish Bhusal, a Nepali developer skilled in JavaScript, Python, C++, and more. Projects, blogs, and contact.",
-  keywords: [
-      "Pramish Bhusal",
-      "Nepal developer",
-      "13 years old prodigi",
-      "Pygame chess",
-      "JavaScript developer Nepal",
-      "Python projects",
-      "Next.js portfolio"
-  ]
+  title: "About Pramish Bhusal – Full Stack Developer",
+  description:
+    "Learn about Pramish Bhusal, a Full Stack Developer focused on building modern web apps with Next.js, React, JavaScript, and clean APIs.",
+  openGraph: {
+    title: "About Pramish Bhusal",
+    description:
+      "Background, skills, and development journey of Pramish Bhusal.",
+    type: "article",
+  },
 };
 export default function About() {
 	const renderElem = (node, keyPrefix = "root") => {

@@ -1,17 +1,15 @@
 import data from "@/data/project.json"
 import Details from "./details.js"
 export const metadata = {
-  title: "My projects",
-  description: "Portfolio of Pramish Bhusal, a Nepali developer skilled in JavaScript, Python, C++, and more. Projects, blogs, and contact.",
-  keywords: [
-      "Pramish Bhusal",
-      "Nepal developer",
-      "13 years old prodigi",
-      "Pygame chess",
-      "JavaScript developer Nepal",
-      "Python projects",
-      "Next.js portfolio"
-  ]
+  title: "Projects – Pramish Bhusal | Next.js Portfolio",
+  description:
+    "Browse projects by Pramish Bhusal including Next.js web apps, React projects, API integrations, and real-world portfolio builds with live demos.",
+  openGraph: {
+    title: "Projects by Pramish Bhusal",
+    description:
+      "Next.js, React, and JavaScript projects with demos and source code.",
+    type: "website",
+  },
 };
 export default function Project(){
 	return (
