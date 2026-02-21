@@ -26,7 +26,6 @@ export const metadata = {
       "Next.js portfolio"
   ]
 };
-                                    
 
 export default function RootLayout({ children }) {
   return (

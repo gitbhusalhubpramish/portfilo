@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MeanuIcon from "./meanuicon";
 import Menu from "./menu";
 import navLinks from "../data/navlinks.json";
@@ -7,12 +7,18 @@ import Link from "next/link";
 
 export default function Navbar() {
 	const [showmenu, setshowmenu] = useState(false);
+	const [show, setShow] = useState(false);
 
+	useEffect(() => {
+		// Trigger animation on mount
+		setShow(true);
+	}, []);
 	const navcls =
 		"fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-50 " +
 		"backdrop-blur-xl bg-gradient-to-r from-white/60 to-white/40 " +
-		"border border-white/30 rounded-2xl px-6 py-3 shadow-lg";
-
+		"border border-white/30 rounded-2xl px-6 py-3 shadow-lg " +
+		"transition-transform duration-500 ease-out " +  // animation
+		(show ? "translate-y-0 opacity-100" : "-translate-y-20 opacity-0"); // hidden above
 	const ulcls =
 		"list-none text-sm sm:text-base md:text-lg text-[#0b1120]/70";
 
