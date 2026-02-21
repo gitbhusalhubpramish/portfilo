@@ -25,7 +25,7 @@ export default function Navbar() {
 		<>
 			{/* Overlay */}
 			<div
-				className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-40 flex justify-end
+				className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-60 flex justify-end
 					transition-opacity duration-300
 					${showmenu ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
 				`}
