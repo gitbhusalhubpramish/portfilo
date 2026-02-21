@@ -2,6 +2,7 @@
 import image from "../public/homeimg.jpg";
 import Image from "next/image";
 import timeline from "../data/timeline.json";
+import Link from "next/link";
 
 export default function Home() {
 	function Marker ({cls}){
@@ -87,6 +88,9 @@ export default function Home() {
 						<p className="text-gray-400 mt-1">
 							{item.description}
 						</p>
+						{item.link &&(
+							<div className="text-end text-gray-400 underline hover:text-gray-500 m-1"><Link href="{item.link}">view {">"}</Link></div>
+						)}
 					</div>
 				</div>
 			))}
