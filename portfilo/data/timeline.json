@@ -8,7 +8,7 @@
     {
       "title": "Proficiency in Multiple Programming Languages",
       "description": "Gained proficiency in Python, C++, JavaScript, Java, and more. Developed skills in logic building, object-oriented programming, memory management, and web development.",
-      "link": "/skill/#skills"
+      "link": "/about/#skills"
     },
     {
       "title": "Completed Digi Navigator 4",
@@ -22,7 +22,7 @@
     {
       "title": "Chess Game Project",
       "description": "Developed a fully functional chess game using Python and Pygame, implementing all game logic from scratch without external libraries.",
-      "link": "/about/#chess"
+      "link": "/projects/#chess"
     },
     {
       "title": "Completed Digi Trailblazer-1",
@@ -31,12 +31,12 @@
     {
       "title": "Machine Learning Project",
       "description": "Created a basic machine learning project capable of recognizing handwritten digits and converting them into digital format, applying fundamental ML techniques.",
-      "link": "/about/#mling"
+      "link": "/projects/#mling"
     },
     {
       "title": "Full-Stack Web Development Course Creation",
       "description": "Designed and developed a beginner-focused full-stack web development course for the ICT Club at NJBS, emphasizing self-learning and practical application.",
-      "link": "/about/#webdev"
+      "link": "/projects/#webdev"
     }
   ]
 }

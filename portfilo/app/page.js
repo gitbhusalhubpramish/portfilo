@@ -99,7 +99,7 @@ export default function Home() {
 							{item.description}
 						</p>
 						{item.link &&(
-							<div className="text-end text-gray-400 underline hover:text-gray-500 m-1"><Link href="{item.link}">view {">"}</Link></div>
+							<div className="text-end text-gray-400 underline hover:text-gray-500 m-1"><Link href={item.link}>view {">"}</Link></div>
 						)}
 					</div>
 				</div>
