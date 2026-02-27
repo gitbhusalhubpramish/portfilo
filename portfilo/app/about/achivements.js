@@ -12,7 +12,8 @@ export default function Achivements() {
 				{data.des.map((item, index) => (
 					<div
 						key={index}
-						className="bg-[#1f2940] w-full flex flex-col gap-3 flex-shrink-0  border border-[#3d5afe] rounded-3xl transition-transform min-h-screen shadow-lg shadow-[#0b1120]/50 overflow-hidden "
+						className="bg-[#1f2940] w-full flex flex-col gap-3 flex-shrink-0  border border-[#3d5afe] rounded-3xl transition-transform min-h-screen shadow-lg shadow-[#0b1120]/50 overflow-hidden " 
+						id={item.id}
 					>
 						{/* Background Image */}
 						{item.bgimg && (

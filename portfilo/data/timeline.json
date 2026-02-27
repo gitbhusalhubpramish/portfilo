@@ -7,7 +7,8 @@
     },
     {
       "title": "Proficiency in Multiple Programming Languages",
-      "description": "Gained proficiency in Python, C++, JavaScript, Java, and more. Developed skills in logic building, object-oriented programming, memory management, and web development."
+      "description": "Gained proficiency in Python, C++, JavaScript, Java, and more. Developed skills in logic building, object-oriented programming, memory management, and web development.",
+      "link": "/about/#skills"
     },
     {
       "title": "Completed Digi Navigator 4",
@@ -15,11 +16,13 @@
     },
     {
       "title": "Province-Level Coding Competition Winner",
-      "description": "Achieved first place in a province-level coding and animation competition organized by Cannon Secondary School and Digi School in 2025."
+      "description": "Achieved first place in a province-level coding and animation competition organized by Cannon Secondary School and Digi School in 2025.",
+      "link": "/about/#hktn"
     },
     {
       "title": "Chess Game Project",
-      "description": "Developed a fully functional chess game using Python and Pygame, implementing all game logic from scratch without external libraries."
+      "description": "Developed a fully functional chess game using Python and Pygame, implementing all game logic from scratch without external libraries.",
+      "link": "/projects/#chess"
     },
     {
       "title": "Completed Digi Trailblazer-1",
@@ -27,11 +30,13 @@
     },
     {
       "title": "Machine Learning Project",
-      "description": "Created a basic machine learning project capable of recognizing handwritten digits and converting them into digital format, applying fundamental ML techniques."
+      "description": "Created a basic machine learning project capable of recognizing handwritten digits and converting them into digital format, applying fundamental ML techniques.",
+      "link": "/projects/#mling"
     },
     {
       "title": "Full-Stack Web Development Course Creation",
-      "description": "Designed and developed a beginner-focused full-stack web development course for the ICT Club at NJBS, emphasizing self-learning and practical application."
+      "description": "Designed and developed a beginner-focused full-stack web development course for the ICT Club at NJBS, emphasizing self-learning and practical application.",
+      "link": "/projects/#webdev"
     }
   ]
 }

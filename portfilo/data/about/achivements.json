@@ -15,7 +15,8 @@
 				"Secured 1st place in a 2-hour province-level coding and animation hackathon organized by Digischool and Cannon Secondary School in Lumbini Province, competing solo in Category 3 (Classes 6–7).",
 				"Represented Nawajyoti English Boarding School as the only participant from the school and defeated opponents by over 300 points, showcasing exceptional problem-solving speed and accuracy.",
 				"Developed a Python-based scientific calculator featuring both basic operations and advanced vector and matrix calculations using NumPy, demonstrating strong programming skills and efficient algorithm design under time constraints."
-			]
+			],
+			"id": "hktn"
 		
 		},
 		{
@@ -32,7 +33,8 @@
 				"Validated real-world frontend development skills and problem-solving ability, showcasing verified technical expertise to potential employers and peers."
 			],
 			"link":"https://www.hackerrank.com/profile/bpramish71",
-			"profile": true
+			"profile": true,
+			"id": "hkrnk"
 		},
 		{
 			"title": "200 Days of LeetCode Challenge",
@@ -45,7 +47,8 @@
 				"Strengthened problem-solving skills, optimized coding efficiency, and improved understanding of algorithmic patterns for real-world software development."
 			],
 			"link": "https://leetcode.com/u/bhusalprit/",
-			"profile":true
+			"profile":true,
+			"id": "leetcode"
 		}
 	]
 }
