@@ -78,7 +78,7 @@ export default function Details({ project }) {
         </div>
       </summary>
 
-      <div className="mx-5 sm:mx-7 mb-16 prose prose-invert max-w-none [&>pre]:bg-[#343541] [&>pre]:rounded-lg [&>pre]:p-4 [&>pre]:text-white [&_code]:bg-[#343541] [&_code]:rounded-lg [&_code]:p-1 [&_code]:text-white [&>*]:m-1">
+      <div className="mx-5 sm:mx-7 mb-16 prose prose-invert max-w-none [&>pre]:bg-[#343541] [&>pre]:rounded-lg [&>pre]:p-4 [&>pre]:text-white [&_code]:bg-[#343541] [&_code]:rounded-lg [&_code]:p-1 [&_code]:text-white [&>*]:m-1 [&>h1]:text-3xl [&>h1]:font-bold [&>h2]:text-2xl [&>h3]:text-xl &>h1]:mt-4 [&>h2]:mt-3 [&>h3]-mt-2 [&>ul]:list-disc [&>ul]:ml-10 [&>table]:min-w-2/3 [&>table]:text-center [&>table_*]:border-1 [&>table]:border-white [&>table]:overflow-auto [&>pre]:overflow-auto">
         {readme !== null ? (
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{readme}</ReactMarkdown>
         ) : (
