@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-
+resend.domains.create({ name: 'pramishbhusal.com.np' });
 export async function POST(req) {
 	try {
 		const body = await req.formData();
