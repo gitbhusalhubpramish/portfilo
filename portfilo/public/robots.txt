@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://pramishbhusal.com
+Host: https://pramishbhusal.com.np
 
 # Sitemaps
-Sitemap: https://pramishbhusal.com/sitemap.xml
+Sitemap: https://pramishbhusal.com.np/sitemap.xml
