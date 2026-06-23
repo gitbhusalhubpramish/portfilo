@@ -7,6 +7,11 @@
 					"id": "mling"
 				},
 				{
+					"title":"Social Todo App",
+					"link":"https://github.com/gitbhusalhubpramish/todoapp",
+					"id": "todo"
+				},
+				{
 					"title":"Chess Game",
 					"link": "https://github.com/gitbhusalhubpramish/chess",
 					"id": "chess"
